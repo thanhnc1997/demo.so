@@ -50,5 +50,64 @@
 			margin-bottom: 60px;
 			font-weight: 500;
 		}
+		
+		.grid {
+			margin-bottom: 32px;
+			grid-gap: 60px;
+		}
+	}
+	
+	.main-footer {
+		padding-bottom: 120px;
+	}
+	
+	.content.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		h3 {
+			font-size: 48px;
+			max-width: 430px;
+			
+			img {
+				position: absolute;
+				bottom: -10px;
+				left: 45%;
+			}
+		}
+		
+		nav {
+			a {
+				margin-right: 60px;
+			}
+		}
+	}
+	
+	.content.right {
+		color: $light;
+		
+		h4 {
+			font-size: 34px;
+			margin-bottom: 80px;
+		}
+	}
+}
+
+.marquee {
+	overflow: clip;
+	
+	div {
+		display: flex;
+		width: max-content;
+		animation: marquee 20s linear infinite;
+	}
+	
+	span {
+		color: $light;
+		opacity: .15;
+		font-size: 54px;
+		font-weight: 800;
+		margin-right: 12px;
 	}
 }

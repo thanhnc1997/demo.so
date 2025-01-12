@@ -165,6 +165,10 @@ hr {
   color: $grey1 !important;
 }
 
+.mt-auto {
+	margin-top: auto;
+}
+
 .ml-6 {
 	margin-left: 6px;
 }
@@ -234,7 +238,7 @@ hr {
 }
 
 .mb-40 {
-	margin-bottom: 24px;
+	margin-bottom: 40px;
 }
 
 .w-100 {
@@ -300,15 +304,21 @@ hr {
 .select {
 	padding: 12px 16px;
 	min-height: 46px;
+	font-size: 18px;
 }
 
 .input,
 .select {
 	display: block;
 	width: 100%;
-	border: 1px solid $grey2;
-	border-radius: 6px;
-	background: $light;
+	border: 0;
+	border-bottom: 1px solid $grey2;
+	padding: 16px 0;
+	background: transparent;
+	
+	&:focus {
+		border-color: #1778F2;
+	}
 	
 	&:disabled {
 		background: $grey5;

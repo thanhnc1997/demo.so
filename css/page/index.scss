@@ -187,6 +187,12 @@
 			max-width: 60%;
 			font-size: 34px;
 			margin-bottom: 80px;
+			
+			img {
+				position: absolute;
+				top: 0;
+				left: 100%;
+			}
 		}
 		
 		.grid {

@@ -29,3 +29,9 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
