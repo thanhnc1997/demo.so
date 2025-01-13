@@ -169,8 +169,12 @@
 
 html,
 body {
-  font-size: 18px;
+  font-size: 14px;
   color: #222222; }
+  @media (min-width: 1140px) {
+    html,
+    body {
+      font-size: 18px; } }
 
 body,
 #app {
@@ -399,9 +403,15 @@ hr {
 .btn,
 .input,
 .select {
-  padding: 12px 16px;
-  min-height: 46px;
-  font-size: 18px; }
+  padding: 8px 12px;
+  min-height: 40px; }
+  @media (min-width: 1140px) {
+    .btn,
+    .input,
+    .select {
+      font-size: 18px;
+      padding: 12px 16px;
+      min-height: 46px; } }
 
 .input,
 .select {
@@ -409,7 +419,7 @@ hr {
   width: 100%;
   border: 0;
   border-bottom: 1px solid #C1C1C1;
-  padding: 16px 0;
+  padding: 8px 0;
   background: transparent; }
   .input:focus,
   .select:focus {
@@ -420,6 +430,10 @@ hr {
   .input.error,
   .select.error {
     border-color: #f93154; }
+  @media (min-width: 1140px) {
+    .input,
+    .select {
+      padding: 16px 0; } }
 
 .select .dropdown-menu {
   top: calc(100% + 6px);
@@ -703,13 +717,23 @@ hr {
     display: flex;
     align-items: center; }
   .page-header .logo {
-    margin-right: 5%; }
+    margin-right: auto; }
+    @media (min-width: 1140px) {
+      .page-header .logo {
+        margin-right: 5%; } }
   .page-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin-right: 28px; }
+    position: fixed;
+    display: none; }
+    .page-header nav.show {
+      display: flex; }
+    @media (min-width: 1140px) {
+      .page-header nav {
+        position: static;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-right: 28px; } }
     .page-header nav ul {
       list-style: none;
       display: flex;
@@ -772,28 +796,51 @@ hr {
     margin-right: 12px; }
 
 .home-page .hero {
-  padding: 60px 0 140px; }
+  padding: 40px 0 80px; }
+  @media (min-width: 1140px) {
+    .home-page .hero {
+      padding: 60px 0 140px; } }
   @media (min-width: 1800px) {
     .home-page .hero {
       padding-bottom: 10%; } }
   .home-page .hero .image {
     background: #F4F4F4 no-repeat center;
     background-size: cover;
-    border-radius: 40px;
-    padding-top: calc(9 / 21 * 100%); }
+    padding-top: calc(4 / 6 * 100%);
+    margin: 0 -16px; }
+    @media (min-width: 1140px) {
+      .home-page .hero .image {
+        border-radius: 40px;
+        padding-top: calc(9 / 21 * 100%);
+        margin: 0; } }
   .home-page .hero h1 {
     text-align: center;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    position: relative; }
     .home-page .hero h1 span {
-      font-size: 54px;
+      font-size: 28px;
       font-weight: 700;
       position: relative; }
+      @media (min-width: 1140px) {
+        .home-page .hero h1 span {
+          font-size: 54px; } }
+      .home-page .hero h1 span img {
+        display: none; }
+        @media (min-width: 1140px) {
+          .home-page .hero h1 span img {
+            display: block; } }
     .home-page .hero h1 .brush {
       position: absolute;
+      top: 100%;
+      bottom: auto;
       left: 0;
-      top: 100%; }
+      display: block;
+      transform: none; }
   .home-page .hero p {
-    margin-bottom: 82px; }
+    margin-bottom: 42px; }
+    @media (min-width: 1140px) {
+      .home-page .hero p {
+        margin-bottom: 82px; } }
 .home-page .about {
   background: url(../images/about_bg.png) no-repeat center;
   background-size: cover; }

@@ -7,15 +7,29 @@
 	}
 	
 	.logo {
-		margin-right: 5%;
+		margin-right: auto;
+		
+		@media (min-width: 1140px) {
+			margin-right: 5%;
+		}
 	}
 	
 	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		flex-grow: 1;
-		margin-right: 28px;
+		position: fixed;
+		display: none;
+		
+		&.show {
+			display: flex;
+		}
+		
+		@media (min-width: 1140px) {
+			position: static;
+			display: flex !important;
+			align-items: center;
+			justify-content: space-between;
+			flex-grow: 1;
+			margin-right: 28px;
+		}
 		
 		ul {
 			list-style: none;
