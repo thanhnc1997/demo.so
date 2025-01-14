@@ -229,7 +229,8 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-align: left;
-  color: #222222; }
+  color: #222222;
+  border-radius: 0; }
 
 select,
 .select {
@@ -937,8 +938,7 @@ hr {
       display: block;
       font-weight: 700;
       position: relative;
-      font-size: 28px;
-      margin-bottom: 4px; }
+      font-size: 32px; }
       .home-page .about h2 span:first-child {
         transform: translate(25%, 0); }
         @media (min-width: 1140px) {
@@ -976,8 +976,11 @@ hr {
       .home-page .about .content {
         padding: 10% 80px; } }
   .home-page .about .number {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 700; }
+    @media (min-width: 1140px) {
+      .home-page .about .number {
+        font-size: 80px; } }
 .home-page .services {
   padding: 40px 0; }
   @media (min-width: 1140px) {
