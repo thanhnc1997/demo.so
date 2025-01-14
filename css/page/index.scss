@@ -38,10 +38,11 @@
 				}
 				
 				img {
-					display: none;
+					position: absolute;
+					top: 300%;
 					
 					@media (min-width: 1140px) {
-						display: block;
+						position: static;
 					}
 				}
 			}

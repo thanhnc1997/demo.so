@@ -888,10 +888,11 @@ hr {
         .home-page .hero h1 span {
           font-size: 54px; } }
       .home-page .hero h1 span img {
-        display: none; }
+        position: absolute;
+        top: 300%; }
         @media (min-width: 1140px) {
           .home-page .hero h1 span img {
-            display: block; } }
+            position: static; } }
     .home-page .hero h1 .brush {
       position: absolute;
       top: 100%;
