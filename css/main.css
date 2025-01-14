@@ -807,7 +807,8 @@ hr {
       @media (min-width: 1140px) {
         .page-footer .content.left h3 {
           font-size: 48px;
-          margin-bottom: auto; } }
+          margin-bottom: auto;
+          max-width: 420px; } }
       .page-footer .content.left h3 img {
         position: absolute;
         bottom: -10px;
