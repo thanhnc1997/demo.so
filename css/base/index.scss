@@ -726,10 +726,15 @@ hr {
 	&::before {
 		content: '';
 		display: inline-block;
-		width: 14px;
-		height: 14px;
+		width: 10px;
+		height: 10px;
 		border-radius: 50%;
 		background: #1778F2;
 		margin-right: 14px;
+		
+		@media (min-width: 1140px) {
+			width: 14px;
+			height: 14px;
+		}
 	}
 }
