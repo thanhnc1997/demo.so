@@ -731,23 +731,45 @@ hr {
         margin-right: 5%; } }
   .page-header nav {
     position: fixed;
-    display: none; }
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1111;
+    background: #FFFFFF;
+    padding: 40px; }
     .page-header nav.show {
-      display: flex; }
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     @media (min-width: 1140px) {
       .page-header nav {
         position: static;
         display: flex !important;
+        flex-direction: row !important;
         align-items: center;
         justify-content: space-between;
         flex-grow: 1;
-        margin-right: 28px; } }
+        margin-right: 28px;
+        padding: 0;
+        background: transparent; } }
     .page-header nav ul {
       list-style: none;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: auto; }
+      @media (min-width: 1140px) {
+        .page-header nav ul {
+          flex-direction: row;
+          max-width: 100%;
+          margin-bottom: 0; } }
       .page-header nav ul li {
-        margin-right: 60px; }
+        margin: 0 0 40px 0; }
+        @media (min-width: 1140px) {
+          .page-header nav ul li {
+            margin: 0 60px 0 0; } }
   .page-header a.btn {
     display: none; }
     @media (min-width: 1140px) {
@@ -760,6 +782,12 @@ hr {
         display: none; } }
     .page-header button.btn img {
       width: 28px; }
+    .page-header button.btn.nav-close {
+      position: absolute;
+      top: 16px;
+      right: 16px; }
+      .page-header button.btn.nav-close img {
+        width: 22px; }
 
 .page-footer {
   background: #1778F2;
@@ -858,9 +886,12 @@ hr {
   .marquee span {
     color: #FFFFFF;
     opacity: .15;
-    font-size: 54px;
+    font-size: 42px;
     font-weight: 800;
     margin-right: 12px; }
+    @media (min-width: 1140px) {
+      .marquee span {
+        font-size: 54px; } }
 
 .home-page .hero {
   padding: 28px 0 0; }
@@ -940,7 +971,7 @@ hr {
       position: relative;
       font-size: 32px; }
       .home-page .about h2 span:first-child {
-        transform: translate(25%, 0); }
+        transform: translate(35%, 0); }
         @media (min-width: 1140px) {
           .home-page .about h2 span:first-child {
             transform: translate(15%, 0); } }
@@ -1081,7 +1112,10 @@ hr {
           .home-page .services .list .cta p {
             font-size: 34px; } }
 .home-page .testimonial {
-  padding-bottom: 120px; }
+  padding-bottom: 80px; }
+  @media (min-width: 1140px) {
+    .home-page .testimonial {
+      padding-bottom: 120px; } }
   @media (min-width: 1800px) {
     .home-page .testimonial {
       padding-bottom: 10%; } }

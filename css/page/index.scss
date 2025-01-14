@@ -111,7 +111,7 @@
 				font-size: 32px;
 				
 				&:first-child {
-					transform: translate(25%, 0);
+					transform: translate(35%, 0);
 					
 					@media (min-width: 1140px) {
 						transform: translate(15%, 0);
@@ -309,7 +309,11 @@
 	}
 	
 	.testimonial {
-		padding-bottom: 120px;
+		padding-bottom: 80px;
+		
+		@media (min-width: 1140px) {
+			padding-bottom: 120px;
+		}
 		
 		@media (min-width: 1800px) {
 			padding-bottom: 10%;

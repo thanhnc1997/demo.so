@@ -21,27 +21,51 @@
 	nav {
 		position: fixed;
 		display: none;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 1111;
+		background: $light;
+		padding: 40px;
 		
 		&.show {
 			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 		
 		@media (min-width: 1140px) {
 			position: static;
 			display: flex !important;
+			flex-direction: row !important;
 			align-items: center;
 			justify-content: space-between;
 			flex-grow: 1;
 			margin-right: 28px;
+			padding: 0;
+			background: transparent;
 		}
 		
 		ul {
 			list-style: none;
 			display: flex;
 			align-items: center;
+			flex-direction: column;
+			margin-bottom: auto;
+			
+			@media (min-width: 1140px) {
+				flex-direction: row;
+				max-width: 100%;
+				margin-bottom: 0;
+			}
 			
 			li {
-				margin-right: 60px;
+				margin: 0 0 40px 0;
+				
+				@media (min-width: 1140px) {
+					margin: 0 60px 0 0;
+				}
 			}
 		}
 	}
@@ -63,6 +87,16 @@
 		
 		img {
 			width: 28px;
+		}
+		
+		&.nav-close {
+			position: absolute;
+			top: 16px;
+			right: 16px;
+			
+			img {
+				width: 22px;
+			}
 		}
 	}
 }
@@ -204,8 +238,12 @@
 	span {
 		color: $light;
 		opacity: .15;
-		font-size: 54px;
+		font-size: 42px;
 		font-weight: 800;
 		margin-right: 12px;
+		
+		@media (min-width: 1140px) {
+			font-size: 54px;
+		}
 	}
 }

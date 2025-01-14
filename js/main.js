@@ -3,6 +3,27 @@ const template = document.body;
 
 const app = {
 	pages: {
+		common: {
+			menu() {
+				let pageHeader = template.querySelector('.page-header');
+				let navTrigger = pageHeader.querySelector('.nav-trigger');
+				let navClose = pageHeader.querySelector('.nav-close');
+				let mainNav = pageHeader.querySelector('nav');
+
+				navTrigger.addEventListener('click', () => {
+					mainNav.classList.add('show');
+					template.classList.add('overflow-hidden');
+				});
+				
+				navClose.addEventListener('click', () => {
+					mainNav.classList.remove('show');
+					template.classList.remove('overflow-hidden');
+				});
+			},
+			load() {
+				this.menu();
+			}
+		},
 		home() {
 			const homePage = template.querySelector('.home-page');
 			if (!homePage) return false;
@@ -72,6 +93,7 @@ const app = {
 		},
 		load() {
 			this.home();
+			this.common.load();
 		}
 	},
 	init() {
