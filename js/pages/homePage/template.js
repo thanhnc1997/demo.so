@@ -109,8 +109,8 @@ export async function render() {
 	for (let i in data.testimonials) {
 		let div = document.createElement('div');
 		div.classList.add('item');
-		if (i == 0) div.style.cssText = 'border-radius: 28px 0 0 0';
-		if (i == 1) div.style.cssText = 'border-radius: 0 28px 0 0';
+		if (i == 0) div.style.cssText = 'border-radius: 28px 0 0 0 !important';
+		if (i == 1) div.style.cssText = 'border-radius: 0 28px 0 0 !important';
 		if (i == data.testimonials.length - 1) div.style.cssText = 'border-radius: 0 0 28px 0 !important; border-bottom: 1px solid #D9D9D9;';
 		if (i == data.testimonials.length - 2) div.style.cssText = 'border-radius: 0 0 0 28px !important; border-bottom: 1px solid #D9D9D9;';
 		div.innerHTML = `

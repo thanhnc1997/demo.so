@@ -171,7 +171,7 @@ html,
 body {
   font-size: 14px;
   color: #222222; }
-  @media (min-width: 1140px) {
+  @media (min-width: 1024px) {
     html,
     body {
       font-size: 18px; } }
@@ -793,6 +793,9 @@ hr {
   background: #1778F2;
   border-radius: 40px 40px 0 0;
   padding: 24px 0 0; }
+  @media (min-width: 768px) {
+    .page-footer {
+      padding: 48px 0 0; } }
   @media (min-width: 1140px) {
     .page-footer {
       border-radius: 80px 80px 0 0;
@@ -815,11 +818,11 @@ hr {
       color: #1778F2;
       margin-bottom: 28px;
       font-weight: 500; }
-      @media (min-width: 1140px) {
+      @media (min-width: 1024px) {
         .page-footer form h4 {
           font-size: 34px;
           margin-bottom: 60px;
-          max-width: 50%; } }
+          max-width: 55%; } }
     .page-footer form .grid {
       margin-bottom: 28px;
       grid-gap: 28px; }
@@ -840,7 +843,7 @@ hr {
       font-size: 28px;
       max-width: 315px;
       margin-bottom: 40px; }
-      @media (min-width: 1140px) {
+      @media (min-width: 1024px) {
         .page-footer .content.left h3 {
           font-size: 48px;
           margin-bottom: auto;
@@ -849,7 +852,7 @@ hr {
         position: absolute;
         bottom: -10px;
         left: 80%; }
-        @media (min-width: 1140px) {
+        @media (min-width: 1024px) {
           .page-footer .content.left h3 img {
             left: 45%; } }
     .page-footer .content.left nav {
@@ -895,7 +898,7 @@ hr {
 
 .home-page .hero {
   padding: 28px 0 0; }
-  @media (min-width: 1140px) {
+  @media (min-width: 1024px) {
     .home-page .hero {
       padding: 60px 0 140px; } }
   @media (min-width: 1800px) {
@@ -906,11 +909,14 @@ hr {
     background-size: cover;
     padding-top: calc(5 / 4 * 100%);
     margin: 0 -16px; }
+    @media (min-width: 768px) {
+      .home-page .hero .image {
+        margin: 0;
+        padding-top: calc(9 / 16 * 100%);
+        border-radius: 40px; } }
     @media (min-width: 1140px) {
       .home-page .hero .image {
-        border-radius: 40px;
-        padding-top: calc(9 / 21 * 100%);
-        margin: 0; } }
+        padding-top: calc(9 / 21 * 100%); } }
   .home-page .hero h1 {
     text-align: center;
     margin-bottom: 24px;
@@ -920,17 +926,20 @@ hr {
       font-weight: 700;
       position: relative;
       flex-direction: column; }
-      @media (min-width: 1140px) {
+      @media (min-width: 1024px) {
         .home-page .hero h1 span {
           flex-direction: row;
+          font-size: 48px; } }
+      @media (min-width: 1320px) {
+        .home-page .hero h1 span {
           font-size: 54px; } }
       .home-page .hero h1 span img {
         position: absolute;
         top: 165%; }
-        @media (min-width: 1140px) {
+        @media (min-width: 1024px) {
           .home-page .hero h1 span img {
             position: static; } }
-      @media (min-width: 1140px) {
+      @media (min-width: 1024px) {
         .home-page .hero h1 span br {
           display: none; } }
     .home-page .hero h1 .brush {
@@ -960,7 +969,7 @@ hr {
       grid-gap: 5%; } }
   .home-page .about .image {
     display: none; }
-    @media (min-width: 1140px) {
+    @media (min-width: 1024px) {
       .home-page .about .image {
         display: block; } }
   .home-page .about h2 {
@@ -995,7 +1004,7 @@ hr {
         right: calc(100% + 20px);
         transform: translate(0, -50%);
         display: none; }
-        @media (min-width: 1140px) {
+        @media (min-width: 1024px) {
           .home-page .about h2 span img {
             display: block; } }
   .home-page .about .content {
@@ -1020,7 +1029,7 @@ hr {
   .home-page .services .desc {
     font-size: 22px;
     margin-bottom: 42px; }
-    @media (min-width: 1140px) {
+    @media (min-width: 1024px) {
       .home-page .services .desc {
         max-width: 60%;
         font-size: 34px;
@@ -1128,7 +1137,7 @@ hr {
   .home-page .testimonial .desc {
     font-size: 22px;
     margin-bottom: 42px; }
-    @media (min-width: 1140px) {
+    @media (min-width: 1024px) {
       .home-page .testimonial .desc {
         max-width: 60%;
         font-size: 34px;

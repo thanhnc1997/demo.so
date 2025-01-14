@@ -5,7 +5,7 @@ export default async function pageFooter() {
 	<div class="container">
 		<form>
 			<h4>Leave a request and we will contact you as soon as possible</h4>
-			<div class="grid grid-md-2">
+			<div class="grid grid-sm-2">
 				<div>
 					<span class="label required">Name</span>
 					<input class="input" type="text" class="input" name="full_name" placeholder="Your full name">
@@ -15,7 +15,7 @@ export default async function pageFooter() {
 					<input class="input" type="text" class="input" name="phone" placeholder="Your phone number">
 				</div>
 			</div>
-			<div class="grid grid-md-2">
+			<div class="grid grid-sm-2">
 				<div>
 					<span class="label required">Company name</span>
 					<input class="input" type="text" class="input" name="company_name" placeholder="Your company name">
