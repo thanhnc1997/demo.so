@@ -1,6 +1,6 @@
 .home-page {
 	.hero {
-		padding:40px 0 80px;
+		padding: 60px 0 0;
 		
 		@media (min-width: 1140px) {
 			padding: 60px 0 140px;
@@ -13,7 +13,7 @@
 		.image {
 			background: $grey5 no-repeat center;
 			background-size: cover;
-			padding-top: calc(4 / 6 * 100%);
+			padding-top: calc(4 / 5 * 100%);
 			margin: 0 -16px;
 			
 			@media (min-width: 1140px) {
@@ -57,7 +57,7 @@
 		}
 		
 		p {
-			margin-bottom: 42px;
+			margin-bottom: 62px;
 			
 			@media (min-width: 1140px) {
 				margin-bottom: 82px;
@@ -85,31 +85,50 @@
 		}
 		
 		.image {
-			background: no-repeat center;
-			background-size: cover;
-			//  padding-top: calc(6 / 5 * 100%);
+			display: none;
+			
+			@media (min-width: 1140px) {
+				display: block;
+			}
 		}
 		
 		h2 {
 			margin-bottom: 28px;
 			
 			span {
-				font-size: 54px;
 				display: block;
 				font-weight: 700;
-				margin-bottom: 12px;
 				position: relative;
+				font-size: 28px;
+				margin-bottom: 4px;
 				
 				&:first-child {
-					transform: translate(15%, 0);
+					transform: translate(25%, 0);
+					
+					@media (min-width: 1140px) {
+						transform: translate(15%, 0);
+					}
 				}
 				
 				&:nth-child(2) {
-					transform: translate(-10%, 0);
+					transform: translate(-20px, 0);
+					
+					@media (min-width: 1140px) {
+						transform: translate(-10%, 0);
+					}
 				}
 				
 				&:nth-child(3) {
-					transform: translate(-25%, 0);
+					transform: translate(-40px, 0);
+					
+					@media (min-width: 1140px) {
+						transform: translate(-25%, 0);
+					}
+				}
+				
+				@media (min-width: 1140px) {
+					font-size: 54px;
+					margin-bottom: 12px;
 				}
 				
 				img {
@@ -117,12 +136,21 @@
 					top: 50%;
 					right: calc(100% + 20px);
 					transform: translate(0, -50%);
+					display: none;
+					
+					@media (min-width: 1140px) {
+						display: block;
+					}
 				}
 			}
 		}
 		
 		.content {
-			padding: 80px;
+			padding: 60px;
+			
+			@media (min-width: 1140px) {
+				padding: 80px;
+			}
 			
 			@media (min-width: 1800px) {
 				padding: 10% 80px;
@@ -136,35 +164,76 @@
 	}
 	
 	.services {
-		padding: 80px 0 120px;
+		padding: 40px 0;
 		
-		@media (min-width: 1800px) {
+		@media (min-width: 1140px) {
 			padding: 10% 0 15%;
 		}
 		
 		.desc {
-			max-width: 60%;
-			font-size: 34px;
-			margin-bottom: 80px;
+			font-size: 22px;
+			margin-bottom: 42px;
+			
+			@media (min-width: 1140px) {
+				max-width: 60%;
+				font-size: 34px;
+				margin-bottom: 80px;
+			}
 		}
 		
 		.list {
 			background: url(../images/services_bg.png) no-repeat center;
 			background-size: cover;
+			overflow: hidden;
+			padding-bottom: 16px; 
+			margin: 0 -16px;
+			
+			@media (min-width: 1140px) {
+				margin: 0;
+			}
+			
+			.container {
+				overflow: auto;
+				padding-bottom: 16px;
+				
+				@media (min-width: 1140px) {
+					padding: 0;
+				}
+				
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
 			
 			.grid {
-				grid-template: auto / repeat(3, 1fr);
-				grid-gap: 40px;
+				display: flex;
+				
+				@media (min-width: 1140px) {
+					display: grid;
+					grid-template: auto / repeat(3, 1fr);
+					grid-gap: 40px;
+				}
 			}
 			
 			figure {
 				position: relative;
+				margin-right: 28px;
+				flex: 0 0 280px;
+				
+				@media (min-width: 1140px) {
+					flex: none;
+					margin: 0;
+				}
 				
 				.image {
 					padding-top: calc(5 / 4 * 100%);
 					background: $grey5 no-repeat center;
 					background-size: cover;
-					border-radius: 32px;
+					border-radius: 24px;
+					
+					@media (min-width: 1140px) {
+						border-radius: 32px;
+					}
 				}
 				
 				figcaption {
@@ -178,13 +247,21 @@
 					color: $grey5;
 					display: flex;
 					flex-direction: column;
-					padding: 28px;
+					padding: 18px;
 					justify-content: space-between;
+					
+					@media (min-width: 1140px) {
+						padding: 28px;
+					}
 					
 					span, 
 					h3 {
-						font-size: 26px;
+						font-size: 20px;
 						font-weight: 600;
+						
+						@media (min-width: 1140px) {
+							font-size: 26px;
+						}
 					}
 				}
 			}
@@ -194,13 +271,25 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				border-radius: 32px;
+				border-radius: 24px;
 				background: rgba(255, 255, 255, .2);
 				backdrop-filter: blur(2px);
 				box-shadow: 0 2px 15px 1px rgba(0, 0, 0, .1);
+				flex: 0 0 280px;
+				margin-right: 28px;
+				
+				@media (min-width: 1140px) {
+					flex: none;
+					margin: 0;
+					border-radius: 32px;
+				}
 				
 				p {
-					font-size: 34px;
+					font-size: 22px;
+					
+					@media (min-width: 1140px) {
+						font-size: 34px;
+					}
 				}
 			}
 		}
@@ -214,36 +303,89 @@
 		}
 		
 		.desc {
-			max-width: 60%;
-			font-size: 34px;
-			margin-bottom: 80px;
+			font-size: 22px;
+			margin-bottom: 42px;
+			
+			@media (min-width: 1140px) {
+				max-width: 60%;
+				font-size: 34px;
+				margin-bottom: 80px;
+			}
 			
 			img {
 				position: absolute;
-				top: 0;
-				left: 100%;
+				top: calc(100% + 4px);
+  			left: calc(60% - 10px);
+				
+				@media (min-width: 1140px) {
+					top: 0;
+					left: 100%;
+				}
+			}
+		}
+		
+		.list {
+			overflow: hidden;
+			margin: 0 -16px;
+			
+			@media (min-width: 1140px) {
+				margin: 0;
+			}
+			
+			.overflow-auto {
+				padding: 0 16px;
+				
+				@media (min-width: 1140px) {
+					padding: 0;
+				}
+				
+				&::-webkit-scrollbar {
+					display: none;
+				}
 			}
 		}
 		
 		.grid {
-			grid-template: auto / 1fr 1fr;
+			display: flex;
+			padding-bottom: 16px;
+
+			@media (min-width: 1140px) {
+				display: grid;
+				grid-template: auto / repeat(2, 1fr);
+				padding: 0;
+			}
 		}
 		
 		.item {
-			padding: 28px 40px;
+			padding: 24px 28px;
 			border: 1px solid $grey3;
-			border-bottom: 0;
+			flex: 0 0 260px;
+			border-radius: 24px !important;
+			margin-right: 24px;
+
+			@media (min-width: 1140px) {
+				flex: none;
+				margin: 0;
+				border-bottom: 0;
+				border-radius: 0;
+				margin-right: 0;
+				padding: 28px 40px;
+			}
 			
 			&:nth-child(2n) {
-				border-left: 0;
+				border-left: 1px solid $grey3;
+				
+				@media (min-width: 1140px) {
+					border-left: 0;
+				}
 			}
 			
 			.grid {
 				grid-template: auto / 46px auto;
 				grid-gap: 16px;
 				margin-bottom: 26px;
-				border: 0;
-				border-radius: 0;
+				display: grid;
+				padding: 0;
 			}
 			
 			.ava {
@@ -253,7 +395,11 @@
 			}
 			
 			p {
-				font-size: 24px;
+				font-size: 16px;
+				
+				@media (min-width: 1140px) {
+					font-size: 24px;
+				}
 			}
 		}
 	}
