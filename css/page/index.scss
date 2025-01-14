@@ -202,14 +202,16 @@
 			
 			@media (min-width: 1140px) {
 				margin: 0;
+				overflow: unset;
 			}
 			
 			.container {
-				overflow: auto;
+				overflow-x: auto;
 				padding-bottom: 16px;
 				
 				@media (min-width: 1140px) {
 					padding: 0;
+					overflow: unset;
 				}
 				
 				&::-webkit-scrollbar {
@@ -224,6 +226,11 @@
 					display: grid;
 					grid-template: auto / repeat(3, 1fr);
 					grid-gap: 40px;
+				}
+				
+				@media (min-width: 1800px) {
+					grid-template: auto / repeat(4, 1fr);
+					grid-gap: 60px;
 				}
 			}
 			

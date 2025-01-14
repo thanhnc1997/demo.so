@@ -94,9 +94,15 @@ export async function render() {
 
 		servicesList.appendChild(figure);
 	}
-
-	servicesList.insertBefore(document.createElement('div'), servicesList.children[2]);
-	servicesList.insertBefore(cta, servicesList.children[4]);
+	
+	if (window.innerWidth < 1800) {
+		servicesList.insertBefore(document.createElement('div'), servicesList.children[2]);
+		servicesList.insertBefore(cta, servicesList.children[4]);
+	}
+	else {
+		servicesList.insertBefore(cta, servicesList.children[2]);
+	}
+	
 	
 	let testominalsList = template.querySelector('.testimonial .grid');
 
