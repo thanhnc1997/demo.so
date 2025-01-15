@@ -24,14 +24,20 @@ const render = {
 		await draw([
 			(await import('./pages/homePage/template.js')).render(),
 		]);
-		app.appendChild(await pageFooter());
 	},
+	async about() {
+		await draw([
+			(await import('./pages/aboutPage/template.js')).render(),
+		]);
+	}
 }
 
 const SOAPP = {
 	async init() {
-		await render.home();
+		if (pathname == '' || pathname == 'index.html') await render.home();
+		if (pathname == 'about.html') await render.home();
 		AOS.init();
+		app.appendChild(await pageFooter());
 	}
 }
 
