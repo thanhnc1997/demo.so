@@ -34,7 +34,8 @@ const render = {
 
 const SOAPP = {
 	async init() {
-		await render.home();
+		if (pathname == '' || pathname.includes('index.html') || pathname.includes('demo.so')) await render.home();
+		if (pathname.includes('about.html')) await render.about();
 		AOS.init();
 		app.appendChild(await pageFooter());
 	}

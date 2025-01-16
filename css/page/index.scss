@@ -424,6 +424,7 @@
 				padding-top: 100%;
 				border-radius: 50%;
 				background: $grey5 no-repeat center;
+				background-size: cover;
 			}
 			
 			p {
@@ -435,4 +436,142 @@
 			}
 		}
 	}
+}
+
+.about-page {
+	.hero {
+		padding: 60px 0 120px;
+		background: url(../images/services_bg.png) no-repeat center;
+		background-size: cover;
+		
+		.image {
+			background: $grey5 no-repeat center;
+			background-size: cover;
+			padding-top: calc(5 / 4 * 100%);
+			margin: 0 -16px;
+			
+			@media (min-width: 768px) {
+				margin: 0;
+				padding-top: calc(9 / 16 * 100%);
+				border-radius: 40px;
+			}
+			
+			@media (min-width: 1140px) {
+				padding-top: calc(9 / 21 * 100%);
+			}
+		}
+		
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+			position: relative;
+
+			@media (min-width: 1024px) {
+				font-size: 48px;
+			}
+
+			@media (min-width: 1320px) {
+				font-size: 54px;
+			}
+		}
+		
+		.grid {
+			margin-bottom: 40px;
+			
+			@media (min-width: 1140px) {
+				margin-bottom: 82px;
+			}
+			
+			.d-flex {
+				justify-content: flex-end;
+				align-items: flex-end;
+				
+				p {
+					max-width: 80%;
+				}
+			}
+		}
+	}
+	
+	.about {
+		padding: 0 0 60px;
+		
+		@media (min-width: 1024px) {
+			padding: 0 0 140px;
+		}
+		
+		.container {
+			display: grid;
+			grid-gap: 40px;
+			
+			@media (min-width: 768px) {
+				grid-gap: 80px;
+			}
+			
+			@media (min-width: 1024px) {
+				grid-gap: 140px;
+			}
+		}
+		
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+			position: relative;
+
+			@media (min-width: 1024px) {
+				font-size: 48px;
+			}
+
+			@media (min-width: 1320px) {
+				font-size: 54px;
+			}
+		}
+		
+		blockquote {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 60px;
+			
+			@media (min-width: 768px) {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			
+			@media (min-width: 1024px) {
+				margin-bottom: 140px;
+			}
+			
+			.founder {
+				margin-bottom: 40px;
+				flex: 0 0 45%;
+				display: grid;
+				grid-template: auto / 68px auto;
+				grid-gap: 16px;
+				align-items: center;
+				
+				@media (min-width: 768px) {
+					margin: 0;
+				}
+				
+				.ava {
+					padding-top: 100%;
+					border-radius: 50%;
+					background: $grey5 no-repeat center;
+					background-size: cover;
+				}
+			}
+			
+			p {
+				font-size: 22px;
+
+				@media (min-width: 1024px) {
+					font-size: 34px;
+				}
+			}
+		}
+	}
+	
+	.core-value {}
+	
+	.join-us {}
 }

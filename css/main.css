@@ -18,6 +18,9 @@
 @keyframes marquee {
   to {
     transform: translateX(-50%); } }
+@keyframes marqueeReverse {
+  from {
+    transform: translateX(-50%); } }
 .d-flex {
   display: flex; }
 
@@ -791,14 +794,12 @@ hr {
 
 .page-footer {
   background: #1778F2;
-  border-radius: 40px 40px 0 0;
   padding: 24px 0 0; }
   @media (min-width: 768px) {
     .page-footer {
       padding: 48px 0 0; } }
   @media (min-width: 1140px) {
     .page-footer {
-      border-radius: 80px 80px 0 0;
       padding: 80px 0 0; } }
   @media (min-width: 1800px) {
     .page-footer {
@@ -882,13 +883,15 @@ hr {
 
 .marquee {
   overflow: clip; }
+  .marquee.reverse div {
+    animation: marqueeReverse 20s linear infinite; }
   .marquee div {
     display: flex;
     width: max-content;
     animation: marquee 20s linear infinite; }
   .marquee span {
     color: #FFFFFF;
-    opacity: .15;
+    opacity: .2;
     font-size: 42px;
     font-weight: 800;
     margin-right: 12px; }
@@ -1199,11 +1202,105 @@ hr {
     .home-page .testimonial .item .ava {
       padding-top: 100%;
       border-radius: 50%;
-      background: #F4F4F4 no-repeat center; }
+      background: #F4F4F4 no-repeat center;
+      background-size: cover; }
     .home-page .testimonial .item p {
       font-size: 16px; }
       @media (min-width: 1140px) {
         .home-page .testimonial .item p {
           font-size: 24px; } }
+
+.about-page .hero {
+  padding: 60px 0 120px;
+  background: url(../images/services_bg.png) no-repeat center;
+  background-size: cover; }
+  .about-page .hero .image {
+    background: #F4F4F4 no-repeat center;
+    background-size: cover;
+    padding-top: calc(5 / 4 * 100%);
+    margin: 0 -16px; }
+    @media (min-width: 768px) {
+      .about-page .hero .image {
+        margin: 0;
+        padding-top: calc(9 / 16 * 100%);
+        border-radius: 40px; } }
+    @media (min-width: 1140px) {
+      .about-page .hero .image {
+        padding-top: calc(9 / 21 * 100%); } }
+  .about-page .hero h2 {
+    font-size: 40px;
+    font-weight: 700;
+    position: relative; }
+    @media (min-width: 1024px) {
+      .about-page .hero h2 {
+        font-size: 48px; } }
+    @media (min-width: 1320px) {
+      .about-page .hero h2 {
+        font-size: 54px; } }
+  .about-page .hero .grid {
+    margin-bottom: 40px; }
+    @media (min-width: 1140px) {
+      .about-page .hero .grid {
+        margin-bottom: 82px; } }
+    .about-page .hero .grid .d-flex {
+      justify-content: flex-end;
+      align-items: flex-end; }
+      .about-page .hero .grid .d-flex p {
+        max-width: 80%; }
+.about-page .about {
+  padding: 0 0 60px; }
+  @media (min-width: 1024px) {
+    .about-page .about {
+      padding: 0 0 140px; } }
+  .about-page .about .container {
+    display: grid;
+    grid-gap: 40px; }
+    @media (min-width: 768px) {
+      .about-page .about .container {
+        grid-gap: 80px; } }
+    @media (min-width: 1024px) {
+      .about-page .about .container {
+        grid-gap: 140px; } }
+  .about-page .about h2 {
+    font-size: 40px;
+    font-weight: 700;
+    position: relative; }
+    @media (min-width: 1024px) {
+      .about-page .about h2 {
+        font-size: 48px; } }
+    @media (min-width: 1320px) {
+      .about-page .about h2 {
+        font-size: 54px; } }
+  .about-page .about blockquote {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px; }
+    @media (min-width: 768px) {
+      .about-page .about blockquote {
+        flex-direction: row;
+        justify-content: space-between; } }
+    @media (min-width: 1024px) {
+      .about-page .about blockquote {
+        margin-bottom: 140px; } }
+    .about-page .about blockquote .founder {
+      margin-bottom: 40px;
+      flex: 0 0 45%;
+      display: grid;
+      grid-template: auto / 68px auto;
+      grid-gap: 16px;
+      align-items: center; }
+      @media (min-width: 768px) {
+        .about-page .about blockquote .founder {
+          margin: 0; } }
+      .about-page .about blockquote .founder .ava {
+        padding-top: 100%;
+        border-radius: 50%;
+        background: #F4F4F4 no-repeat center;
+        background-size: cover; }
+    .about-page .about blockquote p {
+      font-size: 22px; }
+      @media (min-width: 1024px) {
+        .about-page .about blockquote p {
+          font-size: 34px; } }
 
 /*# sourceMappingURL=main.css.map */
