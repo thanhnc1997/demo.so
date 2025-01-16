@@ -1,4 +1,9 @@
 export default async function pageFooter() {
+	let marqueeText;
+	for (let i = 0; i <= 9; i ++) {
+		marqueeText += '<span class="text-uppercase">SmartOutsourcing</span>';
+	}
+	
 	const template = document.createElement('footer');
 	template.classList.add('page-footer');
 	template.innerHTML = `
@@ -69,13 +74,7 @@ export default async function pageFooter() {
 		</div>
 	</div>
 	<div class="marquee">
-		<div>
-			<span class="text-uppercase">SmartOutsourcing</span>
-			<span class="text-uppercase">SmartOutsourcing</span>
-			<span class="text-uppercase">SmartOutsourcing</span>
-			<span class="text-uppercase">SmartOutsourcing</span>
-			<span class="text-uppercase">SmartOutsourcing</span>
-		</div>
+		<div>${marqueeText}</div>
 	</div>
 	`;
 	

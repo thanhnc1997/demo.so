@@ -1302,5 +1302,39 @@ hr {
       @media (min-width: 1024px) {
         .about-page .about blockquote p {
           font-size: 34px; } }
+.about-page .core-value .grid {
+  grid-template: auto/repeat(2, 1fr);
+  grid-gap: 60px;
+  margin-bottom: 140px; }
+  @media (min-width: 768px) {
+    .about-page .core-value .grid {
+      grid-template: auto/repeat(3, 1fr);
+      grid-gap: 80px; } }
+.about-page .core-value h3 {
+  color: #1778F2;
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    .about-page .core-value h3 {
+      font-size: 24px; } }
+.about-page .core-value .number {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 12px; }
+  @media (min-width: 1140px) {
+    .about-page .core-value .number {
+      font-size: 80px; } }
+.about-page .join-us {
+  padding: 60px 0; }
+  @media (min-width: 1024px) {
+    .about-page .join-us {
+      padding: 120px 0; } }
+  .about-page .join-us .desc {
+    font-size: 22px;
+    margin-bottom: 42px; }
+    @media (min-width: 1024px) {
+      .about-page .join-us .desc {
+        max-width: 60%;
+        font-size: 34px;
+        margin-bottom: 80px; } }
 
 /*# sourceMappingURL=main.css.map */
