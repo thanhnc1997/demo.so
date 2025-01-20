@@ -1275,7 +1275,7 @@ hr {
     margin-bottom: 60px; }
     @media (min-width: 1024px) {
       .about-page .about .container {
-        margin: 0; } }
+        margin-bottom: 0; } }
   .about-page .about h2 {
     font-size: 40px;
     font-weight: 700;
