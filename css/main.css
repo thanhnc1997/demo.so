@@ -1246,9 +1246,11 @@ hr {
     @media (min-width: 1320px) {
       .about-page .hero h2 {
         font-size: 54px; } }
-    @media (min-width: 1024px) {
-      .about-page .hero h2 br {
-        display: none; } }
+    .about-page .hero h2 br {
+      display: none; }
+      @media (min-width: 1024px) {
+        .about-page .hero h2 br {
+          display: inherit; } }
   .about-page .hero .grid {
     margin-bottom: 40px; }
     @media (min-width: 1140px) {
@@ -1335,7 +1337,7 @@ hr {
       display: grid;
       grid-template: auto/repeat(3, 1fr);
       grid-gap: 80px;
-      margin-bottom: 140px; } }
+      margin-bottom: 120px; } }
   .about-page .core-value .grid div {
     flex: 0 0 240px;
     margin-right: 28px; }

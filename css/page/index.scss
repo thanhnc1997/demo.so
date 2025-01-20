@@ -481,8 +481,10 @@
 			}
 			
 			br {
+				display: none;
+				
 				@media (min-width: 1024px) {
-					display: none;
+					display: inherit;
 				}
 			}
 		}
@@ -614,7 +616,7 @@
 				display: grid;
 				grid-template: auto / repeat(3, 1fr);
 				grid-gap: 80px;
-				margin-bottom: 140px;
+				margin-bottom: 120px;
 			}
 			
 			div {
