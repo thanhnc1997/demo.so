@@ -1359,9 +1359,7 @@ hr {
     .about-page .core-value .number {
       font-size: 80px; } }
 .about-page .join-us {
-  padding: 60px 0;
-  background: url(../images/about_bg.png) no-repeat center;
-  background-size: cover; }
+  padding: 60px 0; }
   @media (min-width: 1024px) {
     .about-page .join-us {
       padding: 120px 0; } }
