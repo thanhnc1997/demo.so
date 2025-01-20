@@ -1,16 +1,16 @@
 import {data} from './data.js';
 
 export async function render() {
-	let marquee1,
-			marquee2,
-			marquee3,
-			marquee4;
+	let marquee1 = '',
+			marquee2 = '',
+			marquee3 = '',
+			marquee4 = '';
 	
 	for (let i = 0; i <= 9; i ++) {
 		marquee1 += '<span style="color: #1778F2; opacity: 1;" class="text-uppercase">Core Values</span>';
 		marquee2 += '<span style="color: #E1E1E1; opacity: 1;" class="text-uppercase">Core Values</span>';
-		marquee3 += '<span style="color: #1778F2; opacity: 1;" class="text-uppercase">Join Us</span>';
-		marquee4 += '<span style="color: #E1E1E1; opacity: 1;" class="text-uppercase">Join Us</span>';
+		// marquee3 += '<span style="color: #1778F2; opacity: 1;" class="text-uppercase">Join Us</span>';
+		// marquee4 += '<span style="color: #E1E1E1; opacity: 1;" class="text-uppercase">Join Us</span>';
 	}
 	
 	const template = document.createElement('div');

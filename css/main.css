@@ -1211,9 +1211,12 @@ hr {
           font-size: 24px; } }
 
 .about-page .hero {
-  padding: 60px 0 120px;
+  padding: 28px 0 60px;
   background: url(../images/services_bg.png) no-repeat center;
   background-size: cover; }
+  @media (min-width: 1024px) {
+    .about-page .hero {
+      padding: 60px 0 120px; } }
   .about-page .hero .image {
     background: #F4F4F4 no-repeat center;
     background-size: cover;
@@ -1230,23 +1233,30 @@ hr {
   .about-page .hero h2 {
     font-size: 40px;
     font-weight: 700;
-    position: relative; }
+    position: relative;
+    margin-bottom: 24px; }
     @media (min-width: 1024px) {
       .about-page .hero h2 {
-        font-size: 48px; } }
+        font-size: 48px;
+        margin-bottom: 0; } }
     @media (min-width: 1320px) {
       .about-page .hero h2 {
         font-size: 54px; } }
+    @media (min-width: 1024px) {
+      .about-page .hero h2 br {
+        display: none; } }
   .about-page .hero .grid {
     margin-bottom: 40px; }
     @media (min-width: 1140px) {
       .about-page .hero .grid {
         margin-bottom: 82px; } }
-    .about-page .hero .grid .d-flex {
-      justify-content: flex-end;
-      align-items: flex-end; }
+    @media (min-width: 1024px) {
+      .about-page .hero .grid .d-flex {
+        justify-content: flex-end;
+        align-items: flex-end; } }
+    @media (min-width: 768px) {
       .about-page .hero .grid .d-flex p {
-        max-width: 80%; }
+        max-width: 80%; } }
 .about-page .about {
   padding: 0 0 60px; }
   @media (min-width: 1024px) {
@@ -1261,13 +1271,20 @@ hr {
     @media (min-width: 1024px) {
       .about-page .about .container {
         grid-gap: 140px; } }
+  .about-page .about .container {
+    margin-bottom: 60px; }
+    @media (min-width: 1024px) {
+      .about-page .about .container {
+        margin: 0; } }
   .about-page .about h2 {
     font-size: 40px;
     font-weight: 700;
-    position: relative; }
+    position: relative;
+    margin-bottom: 24px; }
     @media (min-width: 1024px) {
       .about-page .about h2 {
-        font-size: 48px; } }
+        font-size: 48px;
+        margin: 0; } }
     @media (min-width: 1320px) {
       .about-page .about h2 {
         font-size: 54px; } }
@@ -1283,7 +1300,7 @@ hr {
       .about-page .about blockquote {
         margin-bottom: 140px; } }
     .about-page .about blockquote .founder {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
       flex: 0 0 45%;
       display: grid;
       grid-template: auto / 68px auto;
@@ -1302,14 +1319,26 @@ hr {
       @media (min-width: 1024px) {
         .about-page .about blockquote p {
           font-size: 34px; } }
+.about-page .core-value .container {
+  overflow: auto; }
+  .about-page .core-value .container::-webkit-scrollbar {
+    display: none; }
 .about-page .core-value .grid {
-  grid-template: auto/repeat(2, 1fr);
-  grid-gap: 60px;
-  margin-bottom: 140px; }
+  display: flex;
+  margin-bottom: 40px; }
   @media (min-width: 768px) {
     .about-page .core-value .grid {
+      display: grid;
       grid-template: auto/repeat(3, 1fr);
-      grid-gap: 80px; } }
+      grid-gap: 80px;
+      margin-bottom: 140px; } }
+  .about-page .core-value .grid div {
+    flex: 0 0 240px;
+    margin-right: 28px; }
+    @media (min-width: 1024px) {
+      .about-page .core-value .grid div {
+        flex: none;
+        margin: 0; } }
 .about-page .core-value h3 {
   color: #1778F2;
   font-size: 18px; }
@@ -1324,7 +1353,9 @@ hr {
     .about-page .core-value .number {
       font-size: 80px; } }
 .about-page .join-us {
-  padding: 60px 0; }
+  padding: 60px 0;
+  background: url(../images/about_bg.png) no-repeat center;
+  background-size: cover; }
   @media (min-width: 1024px) {
     .about-page .join-us {
       padding: 120px 0; } }

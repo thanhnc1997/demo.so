@@ -440,9 +440,13 @@
 
 .about-page {
 	.hero {
-		padding: 60px 0 120px;
+		padding: 28px 0 60px;
 		background: url(../images/services_bg.png) no-repeat center;
 		background-size: cover;
+		
+		@media (min-width: 1024px) {
+			padding: 60px 0 120px;
+		}
 		
 		.image {
 			background: $grey5 no-repeat center;
@@ -465,13 +469,21 @@
 			font-size: 40px;
 			font-weight: 700;
 			position: relative;
+			margin-bottom: 24px;
 
 			@media (min-width: 1024px) {
 				font-size: 48px;
+				margin-bottom: 0;
 			}
 
 			@media (min-width: 1320px) {
 				font-size: 54px;
+			}
+			
+			br {
+				@media (min-width: 1024px) {
+					display: none;
+				}
 			}
 		}
 		
@@ -483,11 +495,15 @@
 			}
 			
 			.d-flex {
-				justify-content: flex-end;
-				align-items: flex-end;
+				@media (min-width: 1024px) {
+					justify-content: flex-end;
+					align-items: flex-end;
+				}
 				
 				p {
-					max-width: 80%;
+					@media (min-width: 768px) {
+						max-width: 80%;
+					}
 				}
 			}
 		}
@@ -513,13 +529,23 @@
 			}
 		}
 		
+		.container {
+			margin-bottom: 60px;
+			
+			@media (min-width: 1024px) {
+				margin: 0;
+			}
+		}
+		
 		h2 {
 			font-size: 40px;
 			font-weight: 700;
 			position: relative;
+			margin-bottom: 24px;
 
 			@media (min-width: 1024px) {
 				font-size: 48px;
+				margin: 0;
 			}
 
 			@media (min-width: 1320px) {
@@ -542,7 +568,7 @@
 			}
 			
 			.founder {
-				margin-bottom: 40px;
+				margin-bottom: 24px;
 				flex: 0 0 45%;
 				display: grid;
 				grid-template: auto / 68px auto;
@@ -572,14 +598,33 @@
 	}
 	
 	.core-value {
+		.container {
+			overflow: auto;
+			
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		
 		.grid {
-			grid-template: auto / repeat(2, 1fr);
-			grid-gap: 60px;
-			margin-bottom: 140px;
+			display: flex;
+			margin-bottom: 40px;
 			
 			@media (min-width: 768px) {
+				display: grid;
 				grid-template: auto / repeat(3, 1fr);
 				grid-gap: 80px;
+				margin-bottom: 140px;
+			}
+			
+			div {
+				flex: 0 0 240px;
+				margin-right: 28px;
+				
+				@media (min-width: 1024px) {
+					flex: none;
+					margin: 0;
+				}
 			}
 		}
 		
@@ -605,6 +650,8 @@
 	
 	.join-us {
 		padding: 60px 0;
+		background: url(../images/about_bg.png) no-repeat center;
+		background-size: cover;
 		
 		@media (min-width: 1024px) {
 			padding: 120px 0;

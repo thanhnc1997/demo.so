@@ -1,5 +1,5 @@
 export default async function pageFooter() {
-	let marqueeText;
+	let marqueeText = '';
 	for (let i = 0; i <= 9; i ++) {
 		marqueeText += '<span class="text-uppercase">SmartOutsourcing</span>';
 	}
