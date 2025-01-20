@@ -3,10 +3,10 @@ export default async function pageHeader() {
 	template.classList.add('page-header');
 	template.innerHTML = `
 	<div class="container">
-		<a href="index.html" class="logo"><img src="images/logo.svg" alt="Smart Outsourcing"></a>
+		<a href="/demo.so/index.html" class="logo"><img src="images/logo.svg" alt="Smart Outsourcing"></a>
 		<nav>
 			<ul>
-				<li><a href="about.html">About us</a></li>
+				<li><a href="/demo.so/about.html">About us</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#">Career</a></li>
 			</ul>
@@ -26,6 +26,11 @@ export default async function pageHeader() {
 	let navTrigger = template.querySelector('.nav-trigger');
 	let navClose = template.querySelector('.nav-close');
 	let mainNav = template.querySelector('nav');
+	
+	function closeNav() {
+		mainNav.classList.remove('show');
+		template.classList.remove('overflow-hidden');
+	}
 
 	navTrigger.addEventListener('click', () => {
 		mainNav.classList.add('show');
@@ -33,8 +38,13 @@ export default async function pageHeader() {
 	});
 
 	navClose.addEventListener('click', () => {
-		mainNav.classList.remove('show');
-		template.classList.remove('overflow-hidden');
+		closeNav();
+	});
+	
+	template.querySelectorAll('nav a').forEach(a => {
+		a.addEventListener('click', () => {
+			closeNav();
+		});
 	});
 	
 	return template;
