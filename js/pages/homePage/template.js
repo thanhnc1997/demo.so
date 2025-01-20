@@ -38,7 +38,7 @@ export async function render() {
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<h4 class="text-uppercase text-secondary small-headline mb-14">Our Services</h4>
 			<p class="desc" data-aos="fade-up" data-aos-duration="500">
