@@ -773,6 +773,10 @@ hr {
         @media (min-width: 1140px) {
           .page-header nav ul li {
             margin: 0 60px 0 0; } }
+      .page-header nav ul a {
+        font-size: 18px; }
+        .page-header nav ul a:hover {
+          color: #1778F2; }
   .page-header a.btn {
     display: none; }
     @media (min-width: 1140px) {
@@ -981,7 +985,7 @@ hr {
       display: block;
       font-weight: 700;
       position: relative;
-      font-size: 32px; }
+      font-size: 30px; }
       .home-page .about h2 span:first-child {
         transform: translate(35%, 0); }
         @media (min-width: 1140px) {
