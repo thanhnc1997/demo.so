@@ -929,7 +929,7 @@ hr {
     margin-bottom: 24px;
     position: relative; }
     .home-page .hero h1 span {
-      font-size: 40px;
+      font-size: 36px;
       font-weight: 700;
       position: relative;
       flex-direction: column; }
@@ -985,7 +985,10 @@ hr {
       display: block;
       font-weight: 700;
       position: relative;
-      font-size: 30px; }
+      font-size: 29px; }
+      @media (min-width: 375px) {
+        .home-page .about h2 span {
+          font-size: 31px; } }
       .home-page .about h2 span:first-child {
         transform: translate(35%, 0); }
         @media (min-width: 1140px) {
@@ -1235,7 +1238,7 @@ hr {
       .about-page .hero .image {
         padding-top: calc(9 / 21 * 100%); } }
   .about-page .hero h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     position: relative; }
     @media (min-width: 1024px) {
@@ -1281,7 +1284,7 @@ hr {
       .about-page .about .container {
         margin-bottom: 0; } }
   .about-page .about h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     position: relative;
     margin-bottom: 24px; }

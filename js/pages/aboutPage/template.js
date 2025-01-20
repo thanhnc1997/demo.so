@@ -19,7 +19,7 @@ export async function render() {
 	<section class="hero">
 		<div class="container">
 			<div class="grid grid-sm-2 gap-24 align-items-center">
-				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">Guided by Purpose,<br>Driven by <br><span style="color: #1778F2;">Excellence</span></h2>
+				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">Guided by Purpose, <br>Driven by <br><span style="color: #1778F2;">Excellence</span></h2>
 				<div class="d-flex">
 					<p class="text-secondary">At <span style="color: #1778F2 ">Smart Outsourcing</span>, we specialize in simplifying business operations through world-class outsourcing services. Since our inception, we’ve been dedicated to helping businesses reduce costs, improve efficiency, and focus on their core strengths.</p>
 				</div>

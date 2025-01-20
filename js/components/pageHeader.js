@@ -3,10 +3,10 @@ export default async function pageHeader() {
 	template.classList.add('page-header');
 	template.innerHTML = `
 	<div class="container">
-		<a href="/demo.so/index.html" class="logo"><img src="images/logo.svg" alt="Smart Outsourcing"></a>
+		<a href="index.html" class="logo"><img src="images/logo.svg" alt="Smart Outsourcing"></a>
 		<nav>
 			<ul>
-				<li><a href="/demo.so/about.html">About us</a></li>
+				<li><a href="about.html">About us</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#">Career</a></li>
 			</ul>
