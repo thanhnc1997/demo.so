@@ -110,11 +110,13 @@ export async function render() {
 		let div = document.createElement('div');
 		div.classList.add('item');
 		if (i == 0) div.style.cssText = 'border-radius: 28px 0 0 0 !important';
-		if (i == 0 && window.innerWidth < 1140) div.style.cssText = 'border-radius: 24 !important';
+		if (i == 0 && window.innerWidth < 1140) div.style.cssText = 'border-radius: 24px !important';
 		if (i == 1) div.style.cssText = 'border-radius: 0 28px 0 0 !important';
-		if (i == 1 && window.innerWidth < 1140) div.style.cssText = 'border-radius: 0 24 !important';
+		if (i == 1 && window.innerWidth < 1140) div.style.cssText = 'border-radius: 0 24px !important';
 		if (i == data.testimonials.length - 1) div.style.cssText = 'border-radius: 0 0 28px 0 !important; border-bottom: 1px solid #D9D9D9;';
+		if (i == data.testimonials.length - 1 && window.innerWidth < 1140) div.style.cssText = 'border-radius: 24px !important; border-bottom: 1px solid #D9D9D9;';
 		if (i == data.testimonials.length - 2) div.style.cssText = 'border-radius: 0 0 0 28px !important; border-bottom: 1px solid #D9D9D9;';
+		if (i == data.testimonials.length - 2 && window.innerWidth < 1140) div.style.cssText = 'border-radius: 24px !important; border-bottom: 1px solid #D9D9D9;';
 		div.innerHTML = `
 		<div class="grid align-items-center">
 			<span class="ava" style="background-image: url(${data.testimonials[i].ava})"></span>
