@@ -1237,12 +1237,10 @@ hr {
   .about-page .hero h2 {
     font-size: 40px;
     font-weight: 700;
-    position: relative;
-    margin-bottom: 24px; }
+    position: relative; }
     @media (min-width: 1024px) {
       .about-page .hero h2 {
-        font-size: 48px;
-        margin-bottom: 0; } }
+        font-size: 48px; } }
     @media (min-width: 1320px) {
       .about-page .hero h2 {
         font-size: 54px; } }
@@ -1354,10 +1352,19 @@ hr {
 .about-page .core-value .number {
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 12px; }
-  @media (min-width: 1140px) {
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block; }
+  @media (min-width: 1024px) {
     .about-page .core-value .number {
       font-size: 80px; } }
+  .about-page .core-value .number img {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px); }
+    @media (min-width: 1024px) {
+      .about-page .core-value .number img {
+        top: 10px; } }
 .about-page .join-us {
   padding: 60px 0; }
   @media (min-width: 1024px) {

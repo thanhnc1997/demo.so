@@ -469,11 +469,9 @@
 			font-size: 40px;
 			font-weight: 700;
 			position: relative;
-			margin-bottom: 24px;
 
 			@media (min-width: 1024px) {
 				font-size: 48px;
-				margin-bottom: 0;
 			}
 
 			@media (min-width: 1320px) {
@@ -643,9 +641,21 @@
 			font-size: 60px;
 			font-weight: 700;
 			margin-bottom: 12px;
+			position: relative;
+			display: inline-block;
 
-			@media (min-width: 1140px) {
+			@media (min-width: 1024px) {
 				font-size: 80px;
+			}
+			
+			img {
+				position: absolute;
+				top: 0;
+				left: calc(100% + 10px);
+				
+				@media (min-width: 1024px) {
+					top: 10px;
+				}
 			}
 		}
 	}

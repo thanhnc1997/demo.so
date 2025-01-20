@@ -18,7 +18,7 @@ export async function render() {
 	template.innerHTML = `
 	<section class="hero">
 		<div class="container">
-			<div class="grid grid-sm-2 align-items-center">
+			<div class="grid grid-sm-2 gap-24 align-items-center">
 				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">Guided by Purpose,<br>Driven by <br><span style="color: #1778F2;">Excellence</span></h2>
 				<div class="d-flex">
 					<p class="text-secondary">At <span style="color: #1778F2 ">Smart Outsourcing</span>, we specialize in simplifying business operations through world-class outsourcing services. Since our inception, we’ve been dedicated to helping businesses reduce costs, improve efficiency, and focus on their core strengths.</p>
@@ -79,7 +79,7 @@ export async function render() {
 	for (let i in data.coreValues) {
 		let div = document.createElement('div');
 		div.innerHTML = `
-		<p class="number">0${parseInt(i) + 1}</p>
+		<p class="number">0${parseInt(i) + 1} <img src="${data.coreValues[i].image}"></p>
 		<h3>${data.coreValues[i].name}</h3>
 		<p class="text-secondary">${data.coreValues[i].desc}</p>
 		`;
