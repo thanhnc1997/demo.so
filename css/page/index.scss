@@ -398,6 +398,7 @@
 			flex: 0 0 260px;
 			border-radius: 28px !important;
 			margin-right: 24px;
+			background: $light;
 
 			@media (min-width: 1140px) {
 				flex: none;
@@ -453,9 +454,9 @@
 		}
 		
 		.image {
-			background: $grey5 no-repeat center;
+			background: $grey5 no-repeat left;
 			background-size: cover;
-			padding-top: calc(5 / 4 * 100%);
+			padding-top: 100%;
 			margin: 0 -16px;
 			
 			@media (min-width: 768px) {
@@ -618,7 +619,7 @@
 				display: grid;
 				grid-template: auto / repeat(3, 1fr);
 				grid-gap: 80px;
-				margin-bottom: 120px;
+				margin-bottom: 100px;
 			}
 			
 			div {
@@ -665,10 +666,10 @@
 	}
 	
 	.join-us {
-		padding: 60px 0;
+		padding: 28px 0 60px;
 		
 		@media (min-width: 1024px) {
-			padding: 120px 0;
+			padding: 80px 0 120px;
 		}
 		
 		.desc {
@@ -676,7 +677,7 @@
 			margin-bottom: 42px;
 			
 			@media (min-width: 1024px) {
-				max-width: 60%;
+				max-width: 65%;
 				font-size: 34px;
 				margin-bottom: 80px;
 			}

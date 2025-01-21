@@ -505,7 +505,7 @@ hr {
   cursor: pointer;
   border-radius: 6px;
   color: #222222;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   font-weight: 600;
   background: transparent;
   text-decoration: none;
@@ -775,6 +775,8 @@ hr {
             margin: 0 60px 0 0; } }
       .page-header nav ul a {
         font-size: 18px; }
+        .page-header nav ul a.active {
+          color: #1778F2; }
         .page-header nav ul a:hover {
           color: #1778F2; }
   .page-header a.btn {
@@ -1186,7 +1188,8 @@ hr {
     border: 1px solid #D9D9D9;
     flex: 0 0 260px;
     border-radius: 28px !important;
-    margin-right: 24px; }
+    margin-right: 24px;
+    background: #FFFFFF; }
     @media (min-width: 1140px) {
       .home-page .testimonial .item {
         flex: none;
@@ -1225,9 +1228,9 @@ hr {
     .about-page .hero {
       padding: 60px 0 120px; } }
   .about-page .hero .image {
-    background: #F4F4F4 no-repeat center;
+    background: #F4F4F4 no-repeat left;
     background-size: cover;
-    padding-top: calc(5 / 4 * 100%);
+    padding-top: 100%;
     margin: 0 -16px; }
     @media (min-width: 768px) {
       .about-page .hero .image {
@@ -1338,7 +1341,7 @@ hr {
       display: grid;
       grid-template: auto/repeat(3, 1fr);
       grid-gap: 80px;
-      margin-bottom: 120px; } }
+      margin-bottom: 100px; } }
   .about-page .core-value .grid div {
     flex: 0 0 240px;
     margin-right: 28px; }
@@ -1369,16 +1372,16 @@ hr {
       .about-page .core-value .number img {
         top: 10px; } }
 .about-page .join-us {
-  padding: 60px 0; }
+  padding: 28px 0 60px; }
   @media (min-width: 1024px) {
     .about-page .join-us {
-      padding: 120px 0; } }
+      padding: 80px 0 120px; } }
   .about-page .join-us .desc {
     font-size: 22px;
     margin-bottom: 42px; }
     @media (min-width: 1024px) {
       .about-page .join-us .desc {
-        max-width: 60%;
+        max-width: 65%;
         font-size: 34px;
         margin-bottom: 80px; } }
 

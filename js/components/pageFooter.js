@@ -13,21 +13,21 @@ export default async function pageFooter() {
 			<div class="grid grid-sm-2">
 				<div>
 					<span class="label required">Name</span>
-					<input class="input" type="text" class="input" name="full_name" placeholder="Your full name">
+					<input class="input" type="text" class="input" name="full_name" placeholder="Your full name" required>
 				</div>
 				<div>
 					<span class="label required">Phone</span>
-					<input class="input" type="text" class="input" name="phone" placeholder="Your phone number">
+					<input class="input" type="text" class="input" name="phone" placeholder="Your phone number" required>
 				</div>
 			</div>
 			<div class="grid grid-sm-2">
 				<div>
 					<span class="label required">Company name</span>
-					<input class="input" type="text" class="input" name="company_name" placeholder="Your company name">
+					<input class="input" type="text" class="input" name="company_name" placeholder="Your company name" required>
 				</div>
 				<div>
 					<span class="label required">Email</span>
-					<input class="input" type="text" class="input" name="email" placeholder="Your email">
+					<input class="input" type="text" class="input" name="email" placeholder="Your email" required>
 				</div>
 			</div>
 			<div class="mb-40">

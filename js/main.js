@@ -22,19 +22,19 @@ async function draw(blocks) {
 const render = {
 	async home() {
 		await draw([
-			(await import('./pages/homePage/template.js')).render(),
+			(await import('./pages/homePage.js')).render(),
 		]);
 	},
 	async about() {
 		await draw([
-			(await import('./pages/aboutPage/template.js')).render(),
+			(await import('./pages/aboutPage.js')).render(),
 		]);
 	}
 }
 
 const SOAPP = {
 	async init() {
-		if (pathname == '' || pathname.includes('index.html') || pathname.includes('demo.so')) await render.home();
+		if (pathname == '' || pathname.includes('index.html')) await render.home();
 		if (pathname.includes('about.html')) await render.about();
 		AOS.init();
 		app.appendChild(await pageFooter());

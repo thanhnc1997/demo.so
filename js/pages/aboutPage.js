@@ -1,4 +1,6 @@
-import {data} from './data.js';
+import {data} from '../config/configAboutPage.js';
+
+const {hero, about, coreValue} = data;
 
 export async function render() {
 	let marquee1 = '',
@@ -19,9 +21,9 @@ export async function render() {
 	<section class="hero">
 		<div class="container">
 			<div class="grid grid-sm-2 gap-24 align-items-center">
-				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">Guided by Purpose, <br>Driven by <br><span style="color: #1778F2;">Excellence</span></h2>
+				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">${hero.title}</h2>
 				<div class="d-flex">
-					<p class="text-secondary">At <span style="color: #1778F2 ">Smart Outsourcing</span>, we specialize in simplifying business operations through world-class outsourcing services. Since our inception, we’ve been dedicated to helping businesses reduce costs, improve efficiency, and focus on their core strengths.</p>
+					<p class="text-secondary">${hero.content}</p>
 				</div>
 			</div>
 			<figure class="image" style="background-image: url(images/hero2.png)"></figure>
@@ -30,8 +32,8 @@ export async function render() {
 	<section class="about overflow-hidden">
 		<div class="container">
 			<div class="grid grid-sm-2 align-items-center">
-				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">Our Mission <br><span style="color: #1778F2;">and Vision</span></h2>
-				<p class="text-secondary">With a global footprint and a team of highly skilled professionals, we take pride in offering innovative solutions tailored to the unique needs of each client. Our mission is to be more than just a service provider we aim to be your trusted partner in growth and success.</p>
+				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">${about.title}</h2>
+				<p class="text-secondary">${about.content}</p>
 			</div>
 			<blockquote class="grid">
 				<div class="founder">
@@ -41,7 +43,7 @@ export async function render() {
 						<b>Mr. Duc Nguyen</b>
 					</span>
 				</div>
-				<p>“Our goal is to empower businesses by delivering reliable, cost-effective, and scalable outsourcing solutions that drive sustainable growth.”</p>
+				<p>${about.quote}</p>
 			</blockquote>
 		</div>
 		
@@ -76,12 +78,12 @@ export async function render() {
 	</section>
 	`;
 	
-	for (let i in data.coreValues) {
+	for (let i in coreValue.list) {
 		let div = document.createElement('div');
 		div.innerHTML = `
-		<p class="number">0${parseInt(i) + 1} <img src="${data.coreValues[i].image}"></p>
-		<h3>${data.coreValues[i].name}</h3>
-		<p class="text-secondary">${data.coreValues[i].desc}</p>
+		<p class="number">0${parseInt(i) + 1} <img src="${coreValue.list[i].image}"></p>
+		<h3>${coreValue.list[i].name}</h3>
+		<p class="text-secondary">${coreValue.list[i].desc}</p>
 		`;
 		
 		template.querySelector('.core-value .grid').appendChild(div);

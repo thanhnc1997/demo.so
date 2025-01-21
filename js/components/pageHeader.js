@@ -1,4 +1,5 @@
 export default async function pageHeader() {
+	const pathname = location.pathname;
 	const template = document.createElement('header');
 	template.classList.add('page-header');
 	template.innerHTML = `
@@ -6,7 +7,7 @@ export default async function pageHeader() {
 		<a href="index.html" class="logo"><img src="images/logo.svg" alt="Smart Outsourcing"></a>
 		<nav>
 			<ul>
-				<li><a href="about.html">About us</a></li>
+				<li><a ${pathname.includes('about.html') ? `class="active"` : ''} href="about.html">About us</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#">Career</a></li>
 			</ul>
