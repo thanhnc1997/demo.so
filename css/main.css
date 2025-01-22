@@ -810,31 +810,31 @@ hr {
   @media (min-width: 1800px) {
     .page-footer {
       padding: 5% 0 0; } }
-  .page-footer form {
+  .page-footer .form {
     background: #FFFFFF;
     border-radius: 24px;
     padding: 28px;
     margin-bottom: 40px; }
     @media (min-width: 1140px) {
-      .page-footer form {
+      .page-footer .form {
         border-radius: 40px;
         padding: 40px;
         margin-bottom: 80px; } }
-    .page-footer form h4 {
+    .page-footer .form h4 {
       font-size: 22px;
       color: #1778F2;
       margin-bottom: 28px;
       font-weight: 500; }
       @media (min-width: 1024px) {
-        .page-footer form h4 {
+        .page-footer .form h4 {
           font-size: 34px;
           margin-bottom: 60px;
           max-width: 55%; } }
-    .page-footer form .grid {
+    .page-footer .form .grid {
       margin-bottom: 28px;
       grid-gap: 28px; }
       @media (min-width: 1140px) {
-        .page-footer form .grid {
+        .page-footer .form .grid {
           margin-bottom: 32px;
           grid-gap: 60px; } }
   .page-footer .main-footer {

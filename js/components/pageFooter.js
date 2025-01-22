@@ -8,12 +8,13 @@ export default async function pageFooter() {
 	template.classList.add('page-footer');
 	template.innerHTML = `
 	<div class="container">
-		<form>
+		<form class="form" action="https://formsubmit.co/info@smartoutsourcing.co.uk" method="POST">
+			<input type="text" name="_honey" style="display:none">
 			<h4>Leave a request and we will contact you as soon as possible</h4>
 			<div class="grid grid-sm-2">
 				<div>
 					<span class="label required">Name</span>
-					<input class="input" type="text" class="input" name="full_name" placeholder="Your full name" required>
+					<input class="input" type="text" class="input" name="name" placeholder="Your full name" required>
 				</div>
 				<div>
 					<span class="label required">Phone</span>
@@ -31,10 +32,10 @@ export default async function pageFooter() {
 				</div>
 			</div>
 			<div class="mb-40">
-				<span class="label required">What specialist are you looking for?</span>
+				<span class="label">What specialist are you looking for?</span>
 				<input class="input" type="text" class="input" name="note" placeholder="Describe the specialist you need">
 			</div>
-			<button type="button" class="btn btn-outline">Request a quote</button>
+			<button type="submit" class="btn btn-outline">Request a quote</button>
 		</form>
 
 		<div class="main-footer grid grid-md-2">
