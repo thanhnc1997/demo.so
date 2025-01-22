@@ -73,7 +73,7 @@ export async function render() {
 			<p class="desc" data-aos="fade-up" data-aos-duration="500">
 				Whether you’re looking to streamline operations, reduce costs, or scale your business, <span style="color: #1778F2;">Smart Outsourcing</span> is here to help. Let’s work together to achieve your goals and take your business to new heights
 			</p>
-			<a href="#" class="btn btn-outline">Contact us</a>
+			<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline">Contact us</a>
 		</div>
 	</section>
 	`;

@@ -17,7 +17,7 @@ export default async function pageHeader() {
 			</button>
 			<a href="mailto:">info@smartoutsourcing.co.uk</a>
 		</nav>
-		<a href="#" class="btn btn-outline">Contact us</a>
+		<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline">Contact us</a>
 		<button class="btn nav-trigger">
 			<img src="images/icons/hamburger.svg">
 		</button>

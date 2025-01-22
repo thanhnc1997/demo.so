@@ -19,7 +19,7 @@ export async function render() {
 			<div class="content">
 				<h2 class="text-uppercase">${about.title}</h2>
 				${about.desc}
-				<a href="#" class="btn btn-outline">Request a quote</a>
+				<a href="mailto:">info@smartoutsourcing.co.uk" class="btn btn-outline">Request a quote</a>
 			</div>
 		</div>
 	</section>
@@ -56,7 +56,7 @@ export async function render() {
 	<div>
 		<p class="mb-8">Which<br>specialist<br>do you need?</p>
 		<span class="d-block mb-40">Leave a request and we’ll be<br>in touch with you as soon<br>as possible</span>
-		<a href="#" class="btn btn-outline" data-aos="fade-up" data-aos-duration="500">Request a quote</a>
+		<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline" data-aos="fade-up" data-aos-duration="500">Request a quote</a>
 	</div>
 	`;
 
