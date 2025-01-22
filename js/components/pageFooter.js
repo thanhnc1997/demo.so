@@ -8,8 +8,9 @@ export default async function pageFooter() {
 	template.classList.add('page-footer');
 	template.innerHTML = `
 	<div class="container">
-		<form class="form" action="https://formsubmit.co/info@smartoutsourcing.co.uk" method="POST">
-			<input type="text" name="_honey" style="display:none">
+		<form class="form" action="https://api.web3forms.com/submit" method="POST">
+			<input type="hidden" name="access_key" value="15af19a1-cb75-40bc-91fc-91e54fcc7a1d">
+			<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 			<h4>Leave a request and we will contact you as soon as possible</h4>
 			<div class="grid grid-sm-2">
 				<div>
