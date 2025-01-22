@@ -8,10 +8,10 @@ export default async function pageFooter() {
 	template.classList.add('page-footer');
 	template.innerHTML = `
 	<div class="container">
-		<form class="form" action="https://api.web3forms.com/submit" method="POST">
+		<form class="form" method="POST">
+			<h4>Leave a request and we will contact you as soon as possible</h4>
 			<input type="hidden" name="access_key" value="15af19a1-cb75-40bc-91fc-91e54fcc7a1d">
 			<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-			<h4>Leave a request and we will contact you as soon as possible</h4>
 			<div class="grid grid-sm-2">
 				<div>
 					<span class="label required">Name</span>
@@ -79,6 +79,32 @@ export default async function pageFooter() {
 		<div>${marqueeText}</div>
 	</div>
 	`;
+	
+	template.querySelector('.form').addEventListener('submit', async e => {
+		e.preventDefault();
+		const formData = new FormData(template.querySelector('.form'));
+		const data = JSON.stringify(Object.fromEntries(formData));
+		await sendMail({formData: formData, callback: handleSent});
+	});
+		
+	async function handleSent() {
+		alert('Email is sent');
+	}
+	
+	async function sendMail(params) {
+		let {formData, callback} = params;
+		
+		const response = await fetch('https://api.web3forms.com/submit', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				'Accept': 'application/json'
+			},
+			body: formData
+		});
+		const data = await response.json();
+		await callback();
+	}
 	
 	return template;
 }
