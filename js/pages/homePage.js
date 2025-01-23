@@ -19,7 +19,7 @@ export async function render() {
 			<div class="content">
 				<h2 class="text-uppercase">${about.title}</h2>
 				${about.desc}
-				<a href="mailto:">info@smartoutsourcing.co.uk" class="btn btn-outline">Request a quote</a>
+				<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline">Request a quote</a>
 			</div>
 		</div>
 	</section>
