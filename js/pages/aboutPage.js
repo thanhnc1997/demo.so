@@ -1,26 +1,22 @@
 import {data} from '../config/configAboutPage.js';
 
 const {hero, about, coreValue} = data;
+const template = document.createElement('div');
+template.classList.add('about-page');
 
 export async function render() {
 	let marquee1 = '',
-			marquee2 = '',
-			marquee3 = '',
-			marquee4 = '';
+			marquee2 = '';
 	
 	for (let i = 0; i <= 9; i ++) {
 		marquee1 += '<span style="color: #1778F2; opacity: 1;" class="text-uppercase">Core Values</span>';
 		marquee2 += '<span style="color: #E1E1E1; opacity: 1;" class="text-uppercase">Core Values</span>';
-		// marquee3 += '<span style="color: #1778F2; opacity: 1;" class="text-uppercase">Join Us</span>';
-		// marquee4 += '<span style="color: #E1E1E1; opacity: 1;" class="text-uppercase">Join Us</span>';
 	}
 	
-	const template = document.createElement('div');
-	template.classList.add('about-page');
 	template.innerHTML = `
 	<section class="hero">
 		<div class="container">
-			<div class="grid grid-sm-2 gap-24 align-items-center">
+			<div class="grid gap-24 align-items-center">
 				<h2 class="text-uppercase" data-aos="fade-up" data-aos-duration="1000">${hero.title}</h2>
 				<div class="d-flex">
 					<p class="text-secondary">${hero.content}</p>
@@ -59,12 +55,6 @@ export async function render() {
 			<div class="grid">
 				
 			</div>
-		</div>
-		<div class="marquee">
-			<div>${marquee3}</div>
-		</div>
-		<div class="marquee reverse">
-			<div>${marquee4}</div>
 		</div>
 	</section>
 	<section class="join-us">

@@ -29,23 +29,27 @@ export const data = {
 		list: [
 			{
 				id: 1, 
-				name: 'Accountancy Service', 
+				name: 'Accountancy Services', 
 				image: 'images/s1.png',
+				link: '/accountancy-services.html',
 			},
 			{
 				id: 2, 
 				name: 'Media Agency', 
 				image: 'images/s2.png',
+				link: '#',
 			},
 			{
 				id: 3, 
 				name: 'Product Design', 
 				image: 'images/s3.png',
+				link: '#',
 			},
 			{
 				id: 4, 
 				name: 'Software Development', 
 				image: 'images/s4.png',
+				link: '#',
 			},
 		],
 		title: '',

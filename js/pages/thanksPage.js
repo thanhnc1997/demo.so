@@ -1,6 +1,7 @@
+const template = document.createElement('div');
+template.classList.add('thanks-page');
+
 export async function render() {
-	const template = document.createElement('div');
-	template.classList.add('thanks-page');
 	template.innerHTML = `
 	<section>
 		<div class="container text-center">

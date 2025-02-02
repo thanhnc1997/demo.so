@@ -24,6 +24,7 @@ const render = {
 		await draw([
 			(await import('./pages/homePage.js')).render(),
 		]);
+		(await import('./pages/homePage.js')).callback()
 	},
 	async about() {
 		await draw([
@@ -35,6 +36,11 @@ const render = {
 			(await import('./pages/thanksPage.js')).render(),
 		]);
 	},
+	async accountancyServices() {
+		await draw([
+			(await import('./pages/accountantcyServicesPage.js')).render(),
+		]);
+	},
 }
 
 const SOAPP = {
@@ -42,6 +48,7 @@ const SOAPP = {
 		if (pathname == '/' || pathname.includes('index.html')) await render.home();
 		if (pathname.includes('about.html')) await render.about();
 		if (pathname.includes('thanks.html')) await render.thanks();
+		if (pathname.includes('accountancy-services.html')) await render.accountancyServices();
 		AOS.init();
 		app.appendChild(await pageFooter());
 	}
