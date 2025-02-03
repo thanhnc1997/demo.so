@@ -40,7 +40,6 @@ export async function render() {
 	for (let i in services.list.slice(0, 5)) {
 		let li = document.createElement('li');
 		li.innerHTML = `
-		<span>0${services.list.slice(0, 5)[i].id}</span>
 		<h3>${services.list.slice(0, 5)[i].name}</h3>
 		<p>${services.list.slice(0, 5)[i].q}</p>
 		`;
@@ -51,7 +50,6 @@ export async function render() {
 	for (let i in services.list.slice(5)) {
 		let li = document.createElement('li');
 		li.innerHTML = `
-		<span>0${services.list.slice(5)[i].id}</span>
 		<h3>${services.list.slice(5)[i].name}</h3>
 		<p>${services.list.slice(5)[i].q}</p>
 		`;
@@ -65,7 +63,7 @@ export async function render() {
 		li.innerHTML = `
 		<figure style="background-image: url(${services.list[i].image})"></figure>
 		<div class="content">
-			<h4>${services.list[i].name}</h4>
+			<h4>0${services.list[i].id}. ${services.list[i].name}</h4>
 			${services.list[i].content}
 		</div>
 		`;

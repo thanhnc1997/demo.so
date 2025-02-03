@@ -1419,7 +1419,7 @@ hr {
         margin: 0; } }
   @media (min-width: 1024px) {
     .accountancy-services-page .hero .grid {
-      grid-template: auto / 1fr 50% 1fr; } }
+      grid-template: auto / 1fr 48% 1fr; } }
   .accountancy-services-page .hero .image {
     background: no-repeat left;
     background-size: cover;
