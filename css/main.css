@@ -1536,7 +1536,7 @@ hr {
       .accountancy-services-page .services .service:nth-child(even) .content {
         order: 0; } }
     .accountancy-services-page .services .service figure {
-      padding-top: calc(9 / 16 * 100%);
+      padding-top: 100%;
       border-radius: 28px;
       background: #E1E1E1 no-repeat center;
       background-size: cover; }
