@@ -801,11 +801,11 @@ hr {
           white-space: nowrap;
           max-width: unset; } }
       .page-header nav .sub-menu li {
-        margin-bottom: 12px;
+        margin: 0 0 12px 0;
         font-size: 14px;
         padding: 0; }
         .page-header nav .sub-menu li:last-child {
-          margin-bottom: 0; }
+          margin: 0; }
         @media (min-width: 1140px) {
           .page-header nav .sub-menu li {
             font-size: 16px; } }
