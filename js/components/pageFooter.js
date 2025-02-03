@@ -68,12 +68,12 @@ export default async function pageFooter() {
 						<span>9th floor CT1, Thanh Cong ward, Ba Dinh District</span>
 					</p>
 					<p>
-						<b class="d-block mb-8">Ho Chi Minh City</b>
-						<span>264 Nguyen Thai Binh, 12 ward, Tan Binh District</span>
-					</p>
-					<p>
 						<b class="d-block mb-8">Da Nang</b>
 						<span>03-05 Xuan Tam, Thuan Phuoc ward, Hai Chau District</span>
+					</p>
+					<p>
+						<b class="d-block mb-8">Ho Chi Minh City</b>
+						<span>264 Nguyen Thai Binh, 12 ward, Tan Binh District</span>
 					</p>
 				</div>
 			</div>
