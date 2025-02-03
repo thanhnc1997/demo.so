@@ -49,7 +49,7 @@ export async function render() {
 						<div class="cta">
 							<p class="mb-8">Which<br>specialist<br>do you need?</p>
 							<span class="d-block mb-40">Leave a request and we’ll be<br>in touch with you as soon<br>as possible</span>
-							<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline" data-aos="fade-up" data-aos-duration="500">Request a quote</a>
+							<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline">Request a quote</a>
 						</div>
 					</li>
 				</ul>
@@ -69,7 +69,6 @@ export async function render() {
 	</section>
 	`;
 	
-	let servicesList = template.querySelector('.services .splide__list');
 	for (let i in services.list) {
 		let li = document.createElement('li');
 		li.classList.add('splide__slide');
@@ -83,7 +82,7 @@ export async function render() {
 		</figure>
 		`;
 
-		servicesList.appendChild(li);
+		template.querySelector('.services .splide__list').appendChild(li);
 	}
 	
 	let testominalsList = template.querySelector('.testimonial .grid');

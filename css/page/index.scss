@@ -191,7 +191,7 @@
 		padding: 40px 0;
 		
 		@media (min-width: 1140px) {
-			padding: 10% 0 15%;
+			padding: 10% 0 12%;
 		}
 		
 		.desc {
@@ -651,15 +651,23 @@
 .accountancy-services-page {
 	.hero {
 		padding: 28px 0 0;
-		background: url(../images/services_bg.png) no-repeat center;
-		background-size: cover;
 		
 		@media (min-width: 1024px) {
 			padding: 60px 0 0;
 		}
 		
-		.grid {
+		.list {
+			background: url(../images/as_bg.png) no-repeat center;
+			background-size: cover;
+			margin: 0 -16px;
+			
 			@media (min-width: 768px) {
+				margin: 0;
+			}
+		}
+		
+		.grid {
+			@media (min-width: 1024px) {
 				grid-template: auto / 1fr 50% 1fr;
 			}
 		}
@@ -668,11 +676,6 @@
 			background: no-repeat left;
 			background-size: cover;
 			padding-top: 100%;
-			margin: 0 -16px;
-			
-			@media (min-width: 768px) {
-				margin: 0;
-			}
 		}
 		
 		h2 {
@@ -698,25 +701,65 @@
 			}
 		}
 		
+		p.text-secondary {
+			@media (min-width: 1024px) {
+				margin-bottom: 28px;
+				max-width: 60%;
+			}
+		}
+		
 		ul {
+			align-self: center;
+			display: none;
+			
+			@media (min-width: 1024px) {
+				display: block;
+			}
+			
 			li {
-				background: $light;
+				background: rgba(255, 255, 255, .5);
 				padding: 10px 16px;
 				border-radius: 14px;
 				margin-bottom: 8px;
-				box-shadow: 0 4px 15px 1px rgba(0, 0, 0, .1);
+				box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .1);
+				backdrop-filter: blur(10px);
+				border: 2px solid transparent;
+				transition: .2s;
+				
+				@media (min-width: 1600px) {
+					margin-bottom: 12px;
+				}
+				
+				&:hover {
+					border-color: #1778F2;
+				}
+				
+				span {
+					display: block;
+					font-weight: 800;
+					color: #1778F2;
+				}
 				
 				h3 {
 					font-size: 14px;
-					color: #1778F2;
+					margin-bottom: 4px;
 					
-					@media (min-width: 1024px) {
+					@media (min-width: 1140px) {
+						font-size: 16px;
+					}
+					
+					@media (min-width: 1800px) {
 						font-size: 18px;
 					}
 				}
 				
 				p {
 					color: $grey1;
+					font-size: 14px;
+					
+					@media (min-width: 1800px) {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -729,6 +772,37 @@
 		@media (min-width: 1024px) {
 			padding: 80px 0;
 		}
+		
+		.small-headline {
+			color: #A4D0FF;
+			
+			&::before {
+				background: #A4D0FF;
+			}
+		}
+		
+		.desc {
+			font-size: 22px;
+			color: $grey4;
+			
+			@media (min-width: 1024px) {
+				max-width: 60%;
+				font-size: 34px;
+			}
+			
+			img {
+				position: absolute;
+				top: calc(100% + 4px);
+  			left: calc(60% - 10px);
+				display: none;
+				
+				@media (min-width: 1024px) {
+					top: 0;
+					left: 100%;
+					display: block;
+				}
+			}
+		}
 	}
 	
 	.services {
@@ -736,6 +810,72 @@
 		
 		@media (min-width: 1024px) {
 			padding: 80px 0;
+		}
+		
+		.service {
+			display: grid;
+			grid-gap: 22px;
+			margin-bottom: 18px;
+			
+			@media (min-width: 1024px) {
+				align-items: center;
+				grid-template: auto / 40% 1fr;
+				grid-gap: 60px;
+				padding: 60px 0;
+				margin-bottom: 0;
+			}
+			
+			&:nth-child(even) {
+				@media (min-width: 1024px) {
+					grid-template: auto / 1fr 40%;
+				}
+				
+				figure {
+					@media (min-width: 1024px) {
+						order: 1;
+					}
+				}
+				
+				.content {
+					@media (min-width: 1024px) {
+						order: 0;
+					}
+				}
+			}
+			
+			figure {
+				padding-top: calc(9 / 16 * 100%);
+				border-radius: 28px;
+				background: $grey4 no-repeat center;
+				background-size: cover;
+			}
+			
+			.content {
+				font-size: 14px;
+				
+				@media (min-width: 1024px) {
+					font-size: 16px;
+				}
+				
+				ul {
+					list-style: circle;
+					padding-left: 20px;
+				}
+				
+				ol {
+					padding-left: 20px;
+				}
+				
+				h4 {
+					font-size: 14px;
+					margin-bottom: 6px;
+					color: #1778F2;
+					
+					@media (min-width: 1024px) {
+						font-size: 16px;
+					}
+				}
+			}
 		}
 	}
 }

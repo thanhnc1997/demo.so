@@ -54,11 +54,15 @@ export default async function pageFooter() {
 			</div>
 			<div class="content right">
 				<p class="mb-8">Call us at</p>
-				<h4>0985.771.211</h4>
+				<h4>+4420 8301 2442</h4>
 				<p class="mb-8">Email us at</p>
 				<h4>info@smartoutsourcing.co.uk</h4>
 				<p class="mb-40"><b>Offices</b></p>
 				<div class="grid grid-md-2 gap-40">
+					<p>
+						<b class="d-block mb-8">Head office</b>
+						<span>133 Creek Road, London SE8 3BU</span>
+					</p>
 					<p>
 						<b class="d-block mb-8">Hanoi</b>
 						<span>9th floor CT1, Thanh Cong ward, Ba Dinh District</span>

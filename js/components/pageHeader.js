@@ -1,3 +1,5 @@
+import {data} from '../config/services.js';
+
 export default async function pageHeader() {
 	const pathname = location.pathname;
 	const template = document.createElement('header');
@@ -8,7 +10,13 @@ export default async function pageHeader() {
 		<nav>
 			<ul>
 				<li><a ${pathname.includes('about.html') ? `class="active"` : ''} href="about.html">About us</a></li>
-				<li><a href="#services">Services</a></li>
+				<li>
+					<a href="#">Services</a>
+					<ul class="sub-menu">
+						<li class="title"><b>Our services</b></li>
+						${data.list.map(i => `<li><a href="${i.link}">${i.name}</a><p class="text-secondary">${i.desc}</p></li>`).join('')}
+					</ul>
+				</li>
 				<li><a href="#">Career</a></li>
 			</ul>
 
@@ -17,7 +25,7 @@ export default async function pageHeader() {
 			</button>
 			<a href="mailto:info@smartoutsourcing.co.uk">info@smartoutsourcing.co.uk</a>
 		</nav>
-		<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline">Contact us</a>
+		<a href="tel:+442083012442" class="btn btn-outline">Contact us</a>
 		<button class="btn nav-trigger">
 			<img src="images/icons/hamburger.svg">
 		</button>
@@ -40,12 +48,6 @@ export default async function pageHeader() {
 
 	navClose.addEventListener('click', () => {
 		closeNav();
-	});
-	
-	template.querySelectorAll('nav a').forEach(a => {
-		a.addEventListener('click', () => {
-			closeNav();
-		});
 	});
 	
 	return template;
