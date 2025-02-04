@@ -11,7 +11,7 @@ export default async function pageHeader() {
 			<ul>
 				<li><a ${pathname.includes('about.html') ? `class="active"` : ''} href="about.html">About us</a></li>
 				<li>
-					<a href="#">Services</a>
+					<a ${pathname.includes('service') ? `class="active"` : ''} href="#">Services</a>
 					<ul class="sub-menu">
 						<li class="title"><b>Our services</b></li>
 						${data.list.map(i => `<li><a href="${i.link}">${i.name}</a><p class="text-secondary">${i.desc}</p></li>`).join('')}
