@@ -616,6 +616,7 @@ hr {
   align-items: center;
   background: transparent;
   background: rgba(255, 255, 255, .4);
+	backdrop-filter: blur(5px);
 }
 
 .lds-ring div {
@@ -624,10 +625,10 @@ hr {
   position: absolute;
   width: 34px;
   height: 34px;
-  border: 5px solid $dark;
+  border: 5px solid #1778F2;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
-  border-color: $dark transparent transparent transparent;
+  border-color: #1778F2 transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
