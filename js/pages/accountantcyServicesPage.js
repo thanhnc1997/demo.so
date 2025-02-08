@@ -12,9 +12,21 @@ export async function render() {
 			<p class="text-secondary">${hero.content}</p>
 			<div class="list">
 				<div class="grid">
-					<ul class="list-left"></ul>
+					<ul>
+						${
+						services.list.slice(0, 5).map(i => `
+						<li><h3>${i.name}</h3><p>${i.q}</p></li>
+						`).join('')
+						}
+					</ul>
 					<figure class="image" style="background-image: url(../images/accountancy.png)"></figure>
-					<ul class="list-right"></ul>
+					<ul>
+						${
+						services.list.slice(5).map(i => `
+						<li><h3>${i.name}</h3><p>${i.q}</p></li>
+						`).join('')
+						}
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -31,48 +43,21 @@ export async function render() {
 	<section class="services">
 		<div class="container">
 			<ul class="list">
-				
+				${
+				services.list.map(i => `
+				<li class="service">
+					<figure style="background-image: url(${i.image})"></figure>
+					<div class="content">
+						<h4>0${i.id}. ${i.name}</h4>
+						${i.content}
+					</div>
+				</li>
+				`).join('')
+				}
 			</ul>
 		</div>
 	</section>
 	`;
-	
-	for (let i in services.list.slice(0, 5)) {
-		let li = document.createElement('li');
-		li.innerHTML = `
-		<h3>${services.list.slice(0, 5)[i].name}</h3>
-		<p>${services.list.slice(0, 5)[i].q}</p>
-		`;
-		
-		template.querySelector('.list-left').appendChild(li);
-	}
-	
-	for (let i in services.list.slice(5)) {
-		let li = document.createElement('li');
-		li.innerHTML = `
-		<h3>${services.list.slice(5)[i].name}</h3>
-		<p>${services.list.slice(5)[i].q}</p>
-		`;
-		
-		template.querySelector('.list-right').appendChild(li);
-	}
-	
-	for (let i in services.list) {
-		let li = document.createElement('li');
-		li.classList.add('service');
-		li.innerHTML = `
-		<figure style="background-image: url(${services.list[i].image})"></figure>
-		<div class="content">
-			<h4>0${services.list[i].id}. ${services.list[i].name}</h4>
-			${services.list[i].content}
-		</div>
-		`;
-		
-		template.querySelector('.services .list').appendChild(li);
-	}
-	
-	return template;
-}
 
 export async function callback() {
 	
