@@ -967,6 +967,7 @@ hr {
   .home-page .hero .image {
     background: #F4F4F4 no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     padding-top: calc(5 / 4 * 100%);
     margin: 0 -16px; }
     @media (min-width: 768px) {
@@ -1263,6 +1264,7 @@ hr {
   .about-page .hero .image {
     background: #F4F4F4 no-repeat left;
     background-size: cover;
+    background-attachment: fixed;
     padding-top: 100%;
     margin: 0 -16px; }
     @media (min-width: 768px) {

@@ -3,7 +3,7 @@ export const data = {
 		{
 			id: 1, 
 			name: 'Accountancy Services', 
-			link: '/accountancy-services.html',
+			link: '/accountancy-services',
 			desc: 'Streamline your finances with expert accounting, bookkeeping, and tax solutions',
 		},
 		{

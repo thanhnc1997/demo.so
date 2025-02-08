@@ -46,9 +46,9 @@ const render = {
 const SOAPP = {
 	async init() {
 		if (pathname == '/' || pathname.includes('index.html')) await render.home();
-		if (pathname.includes('about.html')) await render.about();
+		if (pathname.includes('about')) await render.about();
 		if (pathname.includes('thanks.html')) await render.thanks();
-		if (pathname.includes('accountancy-services.html')) await render.accountancyServices();
+		if (pathname.includes('accountancy-services')) await render.accountancyServices();
 		AOS.init();
 		app.appendChild(await pageFooter());
 	}

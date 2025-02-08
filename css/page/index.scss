@@ -13,6 +13,7 @@
 		.image {
 			background: $grey5 no-repeat center;
 			background-size: cover;
+			background-attachment: fixed;
 			padding-top: calc(5 / 4 * 100%);
 			margin: 0 -16px;
 			
@@ -440,6 +441,7 @@
 		.image {
 			background: $grey5 no-repeat left;
 			background-size: cover;
+			background-attachment: fixed;
 			padding-top: 100%;
 			margin: 0 -16px;
 			

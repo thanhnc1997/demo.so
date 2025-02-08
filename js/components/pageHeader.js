@@ -6,10 +6,10 @@ export default async function pageHeader() {
 	template.classList.add('page-header');
 	template.innerHTML = `
 	<div class="container">
-		<a href="/" class="logo"><img src="images/logo.svg" alt="Smart Outsourcing"></a>
+		<a href="/" class="logo"><img src="/images/logo.svg" alt="Smart Outsourcing"></a>
 		<nav>
 			<ul>
-				<li><a ${pathname.includes('about.html') ? `class="active"` : ''} href="about.html">About us</a></li>
+				<li><a ${pathname.includes('about') ? `class="active"` : ''} href="/about">About us</a></li>
 				<li>
 					<a ${pathname.includes('service') ? `class="active"` : ''} href="#">Services</a>
 					<ul class="sub-menu">
@@ -21,13 +21,13 @@ export default async function pageHeader() {
 			</ul>
 
 			<button class="btn nav-close">
-				<img src="images/icons/close.svg">
+				<img src="/images/icons/close.svg">
 			</button>
 			<a href="mailto:info@smartoutsourcing.co.uk">info@smartoutsourcing.co.uk</a>
 		</nav>
 		<a href="tel:+442083012442" class="btn btn-outline">Contact us</a>
 		<button class="btn nav-trigger">
-			<img src="images/icons/hamburger.svg">
+			<img src="/images/icons/hamburger.svg">
 		</button>
 	</div>
 	`;

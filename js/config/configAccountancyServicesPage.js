@@ -15,7 +15,7 @@ export const data = {
 				id: 1,
 				name: 'Accounts Preparation',
 				q: 'Do you need accurate accounts provided on time?',
-				image: 'images/accountancy_services/asi1.jpg',
+				image: '/images/accountancy_services/asi1.jpg',
 				content: `
 				We can:
 				<ul class="mb-8">
@@ -35,7 +35,7 @@ export const data = {
 				id: 2,
 				name: 'Tax Returns and Self Assessment',
 				q: 'Who said Tax doesn’t have to be taxing?',
-				image: 'images/accountancy_services/asi2.jpg',
+				image: '/images/accountancy_services/asi2.jpg',
 				content: `
 				Tax Returns can be completed for:
 				<ul class="mb-8">
@@ -63,7 +63,7 @@ export const data = {
 				id: 3,
 				name: 'VAT Returns',
 				q: 'Investigations by the VAT Man can be intense.',
-				image: 'images/accountancy_services/asi3.jpg',
+				image: '/images/accountancy_services/asi3.jpg',
 				content: `
 				Compliance with VAT is complex. Investigations by the VAT Man can be intense – all the more important that your VAT returns are completed correctly. There are three methods we can use to assist in completion of VAT returns:
 				<ol class="mb-8">
@@ -85,7 +85,7 @@ export const data = {
 				id: 4,
 				name: 'Bookkeeping',
 				q: 'Stressed out with the paperwork?',
-				image: 'images/accountancy_services/asi4.jpg',
+				image: '/images/accountancy_services/asi4.jpg',
 				content: `
 				Let us take it off your hands:
 				<ul class="mb-8">
@@ -106,7 +106,7 @@ export const data = {
 				id: 5,
 				name: 'Management Accounts and Information',
 				q: 'If you measure it, you can manage it!',
-				image: 'images/accountancy_services/asi5.jpg',
+				image: '/images/accountancy_services/asi5.jpg',
 				content: `
 				If you measure it, you can manage it! Up to date, relevant and quickly produced management information allows you to make the right decisions. Our management accounts and information services include:
 				<ul>
@@ -125,7 +125,7 @@ export const data = {
 				id: 6,
 				name: 'Business Plans',
 				q: 'Business plans are also regularly needed to support finance applications.',
-				image: 'images/accountancy_services/asi6.jpg',
+				image: '/images/accountancy_services/asi6.jpg',
 				content: `
 				Research suggests that those businesses with a written business plan are far more likely to succeed. Business plans are also regularly needed to support finance applications, especially bank lending. We can assist with all aspects of the business plan including:
 				<ul class="mb-8">
@@ -141,7 +141,7 @@ export const data = {
 				id: 7,
 				name: 'Personal Tax',
 				q: 'Need help with your Tax Return or want to pay less tax?',
-				image: 'images/accountancy_services/asi7.jpg',
+				image: '/images/accountancy_services/asi7.jpg',
 				content: `
 				Personal tax services are available both for business owners and private individuals including:
 				<ul>
@@ -161,7 +161,7 @@ export const data = {
 				id: 8,
 				name: 'Payroll and PAYE Returns',
 				q: 'Who said Tax doesn’t have to be taxing?',
-				image: 'images/accountancy_services/asi8.jpg',
+				image: '/images/accountancy_services/asi8.jpg',
 				content: `
 				Everything seemed fine running your own business until the day you took on your first employee and became an unpaid tax collector. This is when you found out what red tape was all about. Payroll is complicated and has to be done on time and you as the employer are responsible for the mistakes.
 				<ul class="mb-8">
@@ -186,7 +186,7 @@ export const data = {
 				id: 9,
 				name: 'Tax Enquiries and Investigations',
 				q: 'Need help fighting the Taxman?',
-				image: 'images/accountancy_services/asi9.jpg',
+				image: '/images/accountancy_services/asi9.jpg',
 				content: `
 				It is an unfortunate fact of business life that you may well come under enquiry by HMRC through no fault of your own or of your accountant. HMRC now investigates businesses at random as well as for specific reasons. A full investigation is not a pleasant experience for anyone. Without expert defence it is possible to get trampled all over.<br>
 				If you are selected at random, you need an accountant who knows how HMRC works and thinks and is prepared to fight your case. We make sure that Taxman keeps to their own internal guidelines and don’t over step the mark. We will talk you through the enquiry process and what to expect and support you throughout.<br>

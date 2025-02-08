@@ -22,7 +22,7 @@ export async function render() {
 					<p class="text-secondary">${hero.content}</p>
 				</div>
 			</div>
-			<figure class="image" style="background-image: url(images/hero2.png)"></figure>
+			<figure class="image" style="background-image: url(../images/hero2.png)"></figure>
 		<div>
 	</section>
 	<section class="about overflow-hidden">
@@ -33,7 +33,7 @@ export async function render() {
 			</div>
 			<blockquote class="grid">
 				<div class="founder">
-					<span class="ava" style="background-image: url(images/founder.JPG)"></span>
+					<span class="ava" style="background-image: url(../images/founder.JPG)"></span>
 					<span class="d-block">
 						<span class="d-block">Founder</span>
 						<b>Mr. Duc Nguyen</b>
