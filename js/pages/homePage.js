@@ -122,6 +122,10 @@ export async function callback() {
 				perPage: 1,
 				padding: {left: 40, right: 40},
 			},
+			667: {
+				perPage: 2,
+				padding: {left: 40, right: 40},
+			},
 			1024: {
 				perPage: 3,
 				padding: {left: 80, right: 80},
