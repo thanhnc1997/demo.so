@@ -58,6 +58,9 @@ export async function render() {
 		</div>
 	</section>
 	`;
+	
+	return template;
+}
 
 export async function callback() {
 	
