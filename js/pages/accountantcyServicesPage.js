@@ -35,7 +35,7 @@ export async function render() {
 		<div class="container">
 			<h4 class="text-uppercase small-headline mb-14">Our Services to You</h4>
 			<p class="desc position-relative aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
-			Feel free to call us anytime for help and advice without worrying about extra charges. Here are some of our services
+			Feel free to call us anytime for help and advice without worrying about extra charges. Here are some of our services.
 			<img data-aos="fade-up" data-aos-duration="800" src="../images/as1.png" class="aos-init aos-animate">
 		</p>
 		</div>
