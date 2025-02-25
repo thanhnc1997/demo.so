@@ -61,7 +61,7 @@ export async function render() {
 		<div class="container">
 			<h4 class="text-uppercase text-secondary small-headline mb-14">Join our family</h4>
 			<p class="desc" data-aos="fade-up" data-aos-duration="500">
-				Whether you’re looking to streamline operations, reduce costs, or scale your business, <span style="color: #1778F2;">Smart Outsourcing</span> is here to help. Let’s work together to achieve your goals and take your business to new heights
+				Whether you’re looking to streamline operations, reduce costs, or scale your business, <span style="color: #1778F2;">Smart Outsourcing</span> is here to help. Let’s work together to achieve your goals and take your business to new heights.
 			</p>
 			<a href="mailto:info@smartoutsourcing.co.uk" class="btn btn-outline">Contact us</a>
 		</div>
