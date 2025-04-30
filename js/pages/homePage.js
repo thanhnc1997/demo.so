@@ -10,12 +10,12 @@ export async function render() {
 		<div class="container">
 			<h1 class="text-uppercase">${hero.title}</h1>
 			<p class="text-center text-secondary">${hero.desc}</p>
-			<figure class="image" style="background-image: url(../images/hero.png)"></figure>
+			<figure class="image" style="background-image: url(/demo.so/images/hero.png)"></figure>
 		</div>
 	</section>
 	<section class="about">
 		<div class="grid overflow-hidden">
-			<figure class="image"><img src="../images/about.png" data-aos="fade-right" data-aos-duration="500"></figure>
+			<figure class="image"><img src="/demo.so/images/about.png" data-aos="fade-right" data-aos-duration="500"></figure>
 			<div class="content">
 				<h2 class="text-uppercase">${about.title}</h2>
 				${about.desc}

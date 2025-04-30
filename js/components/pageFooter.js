@@ -43,13 +43,13 @@ export default async function pageFooter() {
 			<div class="content left">
 				<h3 class="text-uppercase position-relative">
 					Let’s start building your <span style="color: #FFFFFF;">success story</span> today 
-					<img data-aos="fade-up" data-aos-duration="1000" src="../images/group4.png">
+					<img data-aos="fade-up" data-aos-duration="1000" src="/demo.so/images/group4.png">
 				</h3>
 				<nav>
 					<a href="https://www.facebook.com/profile.php?id=61567337881120" target="_blank"><img src="/images/icons/fb.svg"></a>
-					<a href="#"><img src="../images/icons/linkedin.svg"></a>
-					<a href="#"><img src=".../images/icons/tw.svg"></a>
-					<a href="#"><img src="../images/icons/insta.svg"></a>
+					<a href="#"><img src="/demo.so/images/icons/linkedin.svg"></a>
+					<a href="#"><img src="/demo.so/images/icons/tw.svg"></a>
+					<a href="#"><img src="/demo.so/images/icons/insta.svg"></a>
 				</nav>
 			</div>
 			<div class="content right">

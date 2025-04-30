@@ -6,7 +6,7 @@ export default async function pageHeader() {
 	template.classList.add('page-header');
 	template.innerHTML = `
 	<div class="container">
-		<a href="/demo.so" class="logo"><img src="../images/logo.svg" alt="Smart Outsourcing"></a>
+		<a href="/demo.so" class="logo"><img src="/demo.so/images/logo.svg" alt="Smart Outsourcing"></a>
 		<nav>
 			<ul>
 				<li><a ${pathname.includes('about') ? `class="active"` : ''} href="/demo.so/about">About us</a></li>
@@ -21,13 +21,13 @@ export default async function pageHeader() {
 			</ul>
 
 			<button class="btn nav-close">
-				<img src="/images/icons/close.svg">
+				<img src="/demo.so/images/icons/close.svg">
 			</button>
 			<a href="mailto:info@smartoutsourcing.co.uk">info@smartoutsourcing.co.uk</a>
 		</nav>
 		<a href="tel:+442083012442" class="btn btn-outline">Contact us</a>
 		<button class="btn nav-trigger">
-			<img src="../images/icons/hamburger.svg">
+			<img src="/demo.so/images/icons/hamburger.svg">
 		</button>
 	</div>
 	`;
