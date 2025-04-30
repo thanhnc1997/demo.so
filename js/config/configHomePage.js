@@ -4,7 +4,7 @@ export const data = {
 		<span>Connecting<br> Worlds</span>
 		<span class="d-flex justify-content-center align-items-center">
 			<span>Delivering </span>
-			<img data-aos="fade-up" data-aos-duration="1000" src="images/group1.png">
+			<img data-aos="fade-up" data-aos-duration="1000" src="../images/group1.png">
 			<span>Excellence <img src="images/brush.svg" class="brush"></span>
 		</span>
 		`,
@@ -13,7 +13,7 @@ export const data = {
 	about: {
 		title: `
 		<span>Driven by</span>
-		<span style="color: #1778F2;">innovation <img src="images/hand_draw.svg"></span>
+		<span style="color: #1778F2;">innovation <img src="../images/hand_draw.svg"></span>
 		<span>committed to</span>
 		<span style="color: #1778F2;">your success</span>
 		`,
@@ -30,25 +30,25 @@ export const data = {
 			{
 				id: 1, 
 				name: 'Accountancy Services', 
-				image: '/images/s1.png',
+				image: '../images/s1.png',
 				link: '/accountancy-services',
 			},
 			{
 				id: 2, 
 				name: 'Media Agency', 
-				image: '/images/s2.png',
+				image: '../images/s2.png',
 				link: '#',
 			},
 			{
 				id: 3, 
 				name: 'Product Design', 
-				image: '/images/s3.png',
+				image: '../images/s3.png',
 				link: '#',
 			},
 			{
 				id: 4, 
 				name: 'Software Development', 
-				image: '/images/s4.png',
+				image: '../images/s4.png',
 				link: '#',
 			},
 		],

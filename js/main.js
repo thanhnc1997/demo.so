@@ -45,7 +45,7 @@ const render = {
 
 const SOAPP = {
 	async init() {
-		if (pathname == '/' || pathname.includes('index.html')) await render.home();
+		if (pathname == '/demo.so' || pathname.includes('index.html')) await render.home();
 		if (pathname.includes('about')) await render.about();
 		if (pathname.includes('thanks.html')) await render.thanks();
 		if (pathname.includes('accountancy-services')) await render.accountancyServices();
